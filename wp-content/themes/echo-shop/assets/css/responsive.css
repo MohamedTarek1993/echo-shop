@@ -1,0 +1,297 @@
+/* ---------------------------------------------------------media query------------------------------------------- */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  body:after{
+   display: none;
+  }
+  body:before{
+    display: none;
+   }
+  .navbar
+    .navbar-collapse
+    .navbar-nav
+    .nav-item
+    .dropdown_service
+    .dropdown_item_service {
+    width: 33%;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_service {
+    width: 400px;
+    /* overflow-x: scroll; */
+   
+  }
+  .hero_section .swiper .swiper-slide .text_slider {
+    left: 14%;
+    width: 70%;
+    top: 40%;
+  }
+  .hero_section .swiper .swiper-slide .img{
+    height: 500px;
+  }
+  .team_section
+    .swiper
+    .swiper-slide
+    .container_card
+    .box-1
+    .caption-1:hover
+    a {
+    transform: translate(-67px, 3px);
+  }
+  .hero_section .swiper .swiper-slide .img img{
+    animation:unset
+  }
+  .inquery_section form .form-check-inline{
+    width: 40%;
+   }
+    iframe{
+    width: 100% !important;
+   }
+   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link , .navbar.home .navbar-collapse .navbar-nav .nav-item .nav-link{
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1rem;
+   }
+   .navbar .navbar-collapse .inquery_btn .first , .navbar.home .navbar-collapse .inquery_btn .first{
+    padding: 6% 5%;
+    font-size: .9rem;
+   }
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 1023.98px) {
+  .navbar-collapse {
+    /* overflow-x: scroll; */
+  }
+  .service_section .content {
+    margin-bottom: 9%;
+  }
+  .hero_section .swiper .swiper-slide .text_slider {
+    top: 32%;
+  }
+  .hero_section .swiper .swiper-slide .text_slider p {
+    font-size: 1.5rem;
+    padding-right: 12%;
+  }
+  .hero_section .swiper .swiper-slide .text_slider .button .btn {
+    width: 70%;
+    padding: 3% 2%;
+  }
+  .why_choise figure {
+    text-align: center;
+  }
+  .why_choise figure img {
+    height: 250px;
+    width: 50%;
+  }
+  .why_choise .block .button .btn {
+    width: 35%;
+    font-size: 0.9rem;
+  }
+  .counter_section {
+    padding: 5% 0;
+  }
+  .team_section
+    .swiper
+    .swiper-slide
+    .container_card
+    .box-1
+    .caption-1:hover
+    a {
+    transform: translate(-67px, 3px);
+  }
+  .blog_home .box {
+    width: 60%;
+    margin: 4% auto;
+    text-align: center;
+  }
+  .counter_section .boxes .box .img {
+    width: 55px;
+    height: 37px;
+  }
+  .counter_section .boxes .box .content .counter{
+    font-size: 1.9rem;
+  }
+  .counter_section .boxes .box .content i{
+    font-size: 1.4rem;
+  }
+  .navbar-collapse {
+    background: rgba( 16, 34, 46 , .5);
+  }
+  .navbar .navbar-collapse .navbar-nav ,.navbar .navbar-collapse .inquery_btn{
+    width: 100%;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item{
+    text-align: center;
+  }
+ .dropdown{
+   text-align: center;
+   margin-bottom: 10%;
+ }
+ .navbar .navbar-collapse .inquery_btn .first{
+   padding: 1%;
+ }
+ footer .comuncation_information .boxes .box .icon_footer {
+   width: 10%;
+ }
+ .dropdown-menu[data-bs-popper]{
+   /* right: 0%; */
+   left: 300px;
+ }
+ .our_vision .boxes .box::before{
+   top: 35%;
+ }
+ .connect_us .boxes{
+   padding: 10px 0;
+ }
+ .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after{
+    animation-duration: .1s !important;
+ }
+ .inquery_section form .form-check-inline{
+  width: 40%;
+ }
+ .about_us .main-title{
+  justify-content: center;
+  align-items: center;
+  margin-inline-end: 0;
+ }
+ .about_us .main-title p{
+  padding-inline-end: 0;
+  text-align: center;
+ }
+ .about_us .vision_container{
+  padding: 2% 0;
+ }
+ .about_us .button{
+  justify-content: center;
+ }
+ .about_us .img{
+  margin-top: 5%;
+  height: 13.938rem;
+ }
+ .our_service .service_boxes .box{
+  width: 31%;
+ }
+ footer .expert{
+  margin-bottom: 3%;
+ }
+ footer .expert p{
+  padding: 3% 0;
+ }
+ .navbar.home .navbar-collapse .navbar-nav{
+  width: 100%;
+ }
+ .navbar.home .navbar-collapse .inquery_btn{
+  width: 100%;
+ }
+ .navbar .navbar-collapse .inquery_btn .first , .navbar.home .navbar-collapse .inquery_btn .first{
+  padding: 2% 5%;
+ 
+ }
+}
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767.98px) {
+  .counter_section .boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .counter_section .boxes .box .img {
+    width: 48px;
+    height: 38px;
+  }
+  .counter_section .boxes .box .content i {
+    font-size: 1rem;
+  }
+  .counter_section .boxes .box .content .counter {
+    font-size: 1.25rem;
+  }
+  .counter_section .boxes .box {
+    width: 50%;
+    margin-bottom: 3%;
+  }
+  .counter_section .boxes .box {
+    padding: 5% 0;
+  }
+  .main-title h2 {
+    font-size: 1.25rem !important;
+  }
+  .main-title p{
+    font-size: 1rem !important;
+
+  }
+  .main-title p {
+    padding: 2% 5%;
+    font-size: 0.8rem;
+  }
+  .why_choise .block {
+    padding: 3% 1%;
+  }
+  .why_choise .block h2 {
+    font-size: 1.25rem;
+  }
+  .why_choise .block p{
+    font-size: 1rem;
+  }
+  .hero_section .swiper .swiper-slide .text_slider p{
+    font-size: 1rem;
+  }
+  .hero_section .swiper .swiper-slide .text_slider{
+    left: 15%;
+    top: 30%;
+  }
+  .hero_section .swiper .swiper-slide .text_slider .button{
+    width: 100%;
+  }
+  .hero_section .swiper .swiper-slide .text_slider .button .btn{
+    width: 75%;
+  }
+  .why_choise figure img{
+    width: 80%;
+  }
+  .team_section .swiper .swiper-slide .container_card .box-1 img{
+    height: 250px;
+  }
+  .blog_home .box{
+    width: 85%;
+  }
+  .why_choise .block .button{
+    justify-content: center;
+  }
+  footer .lower_footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our_vision .boxes .box::before{
+    display: none;
+  }
+  .our_vision .boxes{
+    flex-direction: column;
+  }
+  header .content h1{
+    font-size: 3rem;
+  }
+  .inquery_section form .form-check-inline{
+    width: 50%;
+   }
+   .regulation_section .search_form .icon_search i{
+    opacity: 0;
+   }
+   .our_service .service_boxes .box{
+   width: 48%;
+   }
+   .about_us .vision_container .vision .img{
+    width: 118px;
+      height: 46px;
+   }
+   .our_service .button a{
+    width: 40%;
+   }
+   .dropdown-menu[data-bs-popper]{
+    left: 144px;
+   }
+   .hero_section .swiper .swiper-slide .text_slider{
+    
+   }
+}
