@@ -55,6 +55,17 @@ function echo_shop_setup()
 		)
 	);
 
+	function get_menu($location, $class)
+	{
+		wp_nav_menu(array(
+			'theme_location'  => $location,
+			'menu_class'   =>  $class,
+			'container' =>  '',
+
+
+		));
+	}
+
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
@@ -152,6 +163,10 @@ function echo_shop_scripts()
 	wp_style_add_data('echo-shop-style', 'rtl', 'replace');
 
 	wp_enqueue_style('boostrap-style', $base . 'assets/css/bootstrap.min.css', [], null);
+	wp_enqueue_style('slider-style', $base . 'assets/css/swiper-demos.css', [], null);
+
+	wp_enqueue_style('scsc-style', $base . 'assets/scss/main.min.css', [], null);
+
 
 
 
@@ -159,6 +174,7 @@ function echo_shop_scripts()
 	//scripts
 	wp_enqueue_script('jquery-script', $base . 'assets/js/jquery-3.5.1.min.js', [], null, true);
 	wp_enqueue_script('boostrap-script', $base . 'assets/js/bootstrap.min.js', [], null, true);
+	wp_enqueue_script('slider-script', $base . 'assets/js/swiper-demos.js', [], null, true);
 	// wp_enqueue_script('main-script', $base . 'assets/js/main.js', [], null, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

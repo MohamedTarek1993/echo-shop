@@ -1,0 +1,4 @@
+2022-10-08T19:04:04+00:00 CRITICAL syntax error, unexpected token "endif" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\page.php on line 27
+
+2022-10-08T21:13:33+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\template-parts\content-page.php on line 34
+

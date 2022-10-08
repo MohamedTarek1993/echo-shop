@@ -1,0 +1,29 @@
+<?php // start loop
+$cat = new WP_Query(array(
+    'post_type' => 'product_cat',
+    'orderby' => 'date',
+    'posts_per_page' => 6,
+    'order'   => 'DESC',
+));
+?>
+<div class="boxes">
+    <?php
+    if ($cat->have_posts()) : //start if condition 
+        while ($cat->have_posts()) : //start while  condition 
+            $cat->the_post();
+    ?>
+            <div class="box">
+                <div class="img">
+                    <img src="<?php the_post_thumbnail_url( ); ?>" alt="">
+                </div>
+                <div class="text_overlay">
+                    <h5><?php the_title(); ?></h5>
+                </div>
+            </div> <!-- finish box card -->
+    <?php
+        endwhile;  //end while condition 
+    endif; //end if condition 
+    ?>
+</div>
+<?php wp_reset_query(); //end loop  
+?>

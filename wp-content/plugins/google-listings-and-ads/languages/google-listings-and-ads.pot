@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Google Listings and Ads plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Google Listings and Ads 2.1.3\n"
+"Project-Id-Version: Google Listings and Ads 2.1.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/google-listings-and-ads\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-09-27T16:28:27+02:00\n"
+"POT-Creation-Date: 2022-10-04T09:44:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: google-listings-and-ads\n"
@@ -783,6 +783,34 @@ msgstr ""
 
 #: src/API/Site/Controllers/MerchantCenter/PhoneVerificationController.php:101
 msgid "The verification code that was sent to the phone number for validation."
+msgstr ""
+
+#: src/API/Site/Controllers/MerchantCenter/PolicyComplianceCheckController.php:96
+msgid "The store website could be accessed or not by all users."
+msgstr ""
+
+#: src/API/Site/Controllers/MerchantCenter/PolicyComplianceCheckController.php:101
+msgid "The merchant set the restrictions in robots.txt or not in the store."
+msgstr ""
+
+#: src/API/Site/Controllers/MerchantCenter/PolicyComplianceCheckController.php:106
+msgid "The sample of product landing pages leads to a 404 error."
+msgstr ""
+
+#: src/API/Site/Controllers/MerchantCenter/PolicyComplianceCheckController.php:111
+msgid "The sample of product landing pages have redirects through 3P domains."
+msgstr ""
+
+#: src/API/Site/Controllers/MerchantCenter/PolicyComplianceCheckController.php:116
+msgid "The payment gateways associated with onboarding policy checking."
+msgstr ""
+
+#: src/API/Site/Controllers/MerchantCenter/PolicyComplianceCheckController.php:121
+msgid "The store ssl associated with onboarding policy checking."
+msgstr ""
+
+#: src/API/Site/Controllers/MerchantCenter/PolicyComplianceCheckController.php:126
+msgid "The refund returns policy associated with onboarding policy checking."
 msgstr ""
 
 #: src/API/Site/Controllers/MerchantCenter/ProductFeedController.php:84
@@ -1918,6 +1946,10 @@ msgid "There was an error loading supported country details."
 msgstr ""
 
 #: js/build/index.js:2
+msgid "There was an error loading policy check details."
+msgstr ""
+
+#: js/build/index.js:2
 msgid "There was an error loading ads campaigns."
 msgstr ""
 
@@ -2751,6 +2783,10 @@ msgid "Contact information"
 msgstr ""
 
 #: js/build/index.js:21
+msgid "Confirm"
+msgstr ""
+
+#: js/build/index.js:21
 msgid "Pre-Launch Checklist"
 msgstr ""
 
@@ -2759,51 +2795,87 @@ msgid "Ensure you meet Google Merchant Center requirements by reviewing this che
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Read Google Merchant requirements"
+msgid "Read Google Merchant Center requirements"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "My store website is live."
+msgid "My store is live and accessible to all users"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Ensure your store website and products are online and accessible to your customers. <link>Read more</link>"
+msgid "Confirm your store is live and accessible to all users"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "I have a complete and secure checkout process."
+msgid "Your Merchant Center account can be suspended if your store is not functional. Ensure that your domain and product pages are not leading to an under construction webpage, or an error page that displays a status code beginning with a 4 or 5 (such as a 405 error)."
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Ensure customers are able to successfully add items to the cart and fully complete the checkout process."
+msgid "Learn more about common landing page issues and how to fix them"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Payment and transaction processing, as well as collection of any sensitive and financial personal information from the user, must be conducted over a secure processing server (SSL-protected, with a valid SSL certificate - https://). <link>Read more</link>"
+msgid "I have a complete checkout process"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "My payment methods are visible on my website."
+msgid "Confirm you have a complete checkout process"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Ensure customers have at least one valid payment method, such as credit card, direct bank transfer, or cash on delivery. <link>Read more</link>"
+msgid "Ensure that all customers are able to complete the full checkout process on your site with an eligible payment method. Include a confirmation of the purchase after completion of the checkout process."
 msgstr ""
 
 #: js/build/index.js:21
-msgid "My refund policy and terms of service are visible on my online store."
+msgid "Learn more about Google's checkout requirements & best practices"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Your site must provide a clear and conspicuous return policy and billing terms to customers. <link>Read more</link>"
+msgid "I have a secure checkout process"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "My store’s phone number, email and/or address are visible on my website."
+msgid "Confirm you have a secure checkout process"
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Your website must display sufficient and accurate contact information to your customers, including a telephone number and/or email. <link>Read more</link>"
+msgid "Update your website to ensure that every webpage that collects a customer's personal information is processed through a secure SSL server. Any page on your website that collects any personal information from the user needs to be SSL protected."
+msgstr ""
+
+#: js/build/index.js:21
+msgid "Use a secure server: Make sure to use a secure processing server when processing customer's personal information (SSL-protected, with a valid SSL certificate). With SSL, your webpage URL will appear with https:// instead of http://"
+msgstr ""
+
+#: js/build/index.js:21
+msgid "Learn to set up SSL on your website"
+msgstr ""
+
+#: js/build/index.js:21
+msgid "My refund policy and terms of service are visible on my online store"
+msgstr ""
+
+#: js/build/index.js:21
+msgid "Confirm a refund policy and terms of service are visible on your online store"
+msgstr ""
+
+#: js/build/index.js:21
+msgid "Show a clear return and refund policy on your website. Include return process, refund process, and customer requirements (return window, product condition and reason for return). If you don't accept returns or refunds, clearly state that on your website."
+msgstr ""
+
+#: js/build/index.js:21
+msgid "Learn more about Google's refund policy requirements"
+msgstr ""
+
+#: js/build/index.js:21
+msgid "My store's phone number, email and/or address are visible on my website"
+msgstr ""
+
+#: js/build/index.js:21
+msgid "Confirm your store's phone number, email and/or address are visible on your website"
+msgstr ""
+
+#: js/build/index.js:21
+msgid "Allow your customers to contact you for product inquiries by including contact information on your website (i.e. contact us form, business profile link, social media, email or phone number)."
 msgstr ""
 
 #: js/build/index.js:21

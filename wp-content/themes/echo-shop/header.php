@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,8 +13,9 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
@@ -21,41 +23,97 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<?php global $base; ?>
+	<?php wp_body_open(); ?>
+	<?php global $base; ?>
 
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'echo-shop' ); ?></a>
+	<!-- start stikeky header -->
+	<section class="stikey_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-5 col-lg-5 col-md-5 col-12">
+					<!-- start information connect -->
+					<ul class="information_connect infp_2">
+						<li>
+							<span> <i class="bi bi-telephone"></i></span>
+							<a href="tel:01093140277"> 0109654245125414 </a>
+						</li>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$echo_shop_description = get_bloginfo( 'description', 'display' );
-			if ( $echo_shop_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $echo_shop_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+						<li>
+							<span> <i class="bi bi-envelope"></i></span>
+							<a href="mailto:someone@yoursite.com"> mt7899@gmail
+							</a>
+						</li>
+					</ul>
+					<!-- finish information connect -->
+				</div> <!-- finish col -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'echo-shop' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+				<div class="col-xl-7 col-lg-7 col-md-7 col-12">
+					<ul class="information_connect">
+						<li>
+							<span> <i class="bi bi-truck"></i></span>
+							<p>Free shipping </p>
+						</li>
+
+						<li>
+							<span><i class="bi bi-clock"></i></span>
+							<p>30 days moneyback gurantee </p>
+						</li>
+						<li>
+							<span><i class="bi bi-person"></i></span>
+							<p>24/7customer service</p>
+						</li>
+					</ul>
+				</div> <!-- finish col -->
+			</div> <!-- finish row -->
+		</div> <!-- finish container -->
+	</section>
+
+	<!-- finish stikeky header -->
+	<!-- strat first header -->
+
+	<section class="first_header py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+					<?php
+					if (has_custom_logo()) {
+						the_custom_logo();
+					}
+					?> </div><!-- finish col -->
+
+				<div class="col-xl-6 col-lg-6 col-md-12 col-12">
+					<div class="search_form">
+						<?php aws_get_search_form(true); ?>
+					</div>
+				</div><!-- finish col -->
+
+				<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+					<div class="card_shop">
+						<a href="<?php echo wc_get_cart_url(); ?>"> <i class="bi bi-bag"></i> </a>
+						<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart' , 'echo-shop'); ?>"><?php echo sprintf(_n('%d item', '%d items', WC()->cart->get_cart_contents_count()), WC()->cart->get_cart_contents_count()); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
+					</div>
+				</div><!-- finish col -->
+			</div><!-- finish row -->
+		</div><!-- finish container -->
+	</section>
+	<!-- finish first header -->
+
+	<!-- strat nav menu -->
+	<nav class="navbar navbar-expand-lg" id="navbar">
+		<div class="container">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+				<?php echo get_menu('menu-1', 'navbar-nav') ?>
+
+			</div>
+
+		</div><!-- finish container -->
+	</nav><!-- finish nav -->
+
+	<!-- finish nav menu -->
