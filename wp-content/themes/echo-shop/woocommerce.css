@@ -226,7 +226,18 @@ ul.products li.product .button {
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n+1) {
 	clear: both;
 }
-
+.single_add_to_cart_button{
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: #e2401c;
+}
+.single_add_to_cart_button i{
+	font-size: 1.5rem;
+	transition: .25s all ease-in-out;
+}
+.single_add_to_cart_button i:hover{
+	color: #ccc;
+}
 .stock:empty::before {
 	display: none;
 }

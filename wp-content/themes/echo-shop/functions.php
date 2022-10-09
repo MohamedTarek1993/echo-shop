@@ -216,3 +216,24 @@ if (defined('JETPACK__VERSION')) {
 if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+// Hide Uncategorized product category from shop page
+add_filter('woocommerce_product_subcategories_args', 'hide_uncategorized_cat_from_shop_page');
+function hide_uncategorized_cat_from_shop_page($args)
+{
+	$args['exclude'] = get_option('default_product_cat');
+	return $args;
+}
+
+// Hide Uncategorized product category from widget
+add_filter('woocommerce_product_categories_widget_args', 'hide_uncategorized_cat_from_widget');
+
+function hide_uncategorized_cat_from_widget($args)
+{
+	$args['exclude'] = get_option('default_product_cat');
+	return $args;
+}
+
+
+//hide category product count in product archives
+add_filter('woocommerce_subcategory_count_html', '__return_false');

@@ -127,7 +127,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+ 
   .first {
     display: flex;
     align-items: center;
@@ -1245,6 +1245,7 @@ input {
       margin-bottom: 3%;
       font-family: "regular";
       width: 38%;
+      text-align: center;
 
       a {
         transition: 0.25s all ease-in-out;
