@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
+	<section class="related products woocommerce_related_products">
 
 		<?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
@@ -31,8 +31,8 @@ if ( $related_products ) : ?>
 			<h2><?php echo esc_html( $heading ); ?></h2>
 		<?php endif; ?>
 		
+		<div class="row">
 		<?php woocommerce_product_loop_start(); ?>
-
 			<?php foreach ( $related_products as $related_product ) : ?>
 
 					<?php
@@ -44,7 +44,7 @@ if ( $related_products ) : ?>
 					?>
 
 			<?php endforeach; ?>
-
+			</div>
 		<?php woocommerce_product_loop_end(); ?>
 
 	</section>
