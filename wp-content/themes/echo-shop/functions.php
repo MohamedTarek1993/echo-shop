@@ -237,3 +237,4 @@ function hide_uncategorized_cat_from_widget($args)
 
 //hide category product count in product archives
 add_filter('woocommerce_subcategory_count_html', '__return_false');
+

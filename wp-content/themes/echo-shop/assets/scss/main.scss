@@ -1296,10 +1296,11 @@ input {
     color: var(--color-primary);
     font-family: "bold";
   }
-  .woocommerce-ordering{
+  .woocommerce-ordering {
     font-size: 1.2rem;
     color: var(--color-text);
-    font-family: 'regular';border-radius: 8px;
+    font-family: "regular";
+    border-radius: 8px;
     margin-bottom: 3%;
   }
   //shop page
@@ -1555,7 +1556,7 @@ input {
   }
 }
 //related products in product page
-.woocommerce_related_products {
+.woocommerce_related_products ,.woocomerce_products_not_found {
   // this class add in relatef.php in woocomerce
   padding: 5% 0;
   h2 {
@@ -1607,26 +1608,26 @@ input {
           font-family: "regular";
           color: var(--color-pargraph);
         }
-        .onsale{
+        .onsale {
           display: flex;
           justify-content: center;
           align-items: center;
           color: var(--color-white);
-          font-size: .9rem;
-          font-family: 'light';
+          font-size: 0.9rem;
+          font-family: "light";
           position: absolute;
           border-radius: 50%;
           width: 50px;
           top: 6%;
-           right: -105%;
+          right: -105%;
           height: 50px;
           background: rgb(238, 69, 16, 0.3);
           color: var(--color-white);
           z-index: 10;
-      
         }
       }
-      .add_to_cart_button {
+      .add_to_cart_button,
+      .product_type_simple {
         position: absolute;
         top: -15%;
         left: -15%;
@@ -1644,9 +1645,9 @@ input {
           transition: 0.3s all ease-in-out;
           color: var(--color-white);
         }
-        &:hover{
+        &:hover {
           background-color: white;
-          i{
+          i {
             color: var(--color-primary);
           }
         }
@@ -1657,9 +1658,34 @@ input {
           left: 6%;
         }
       }
-      .added_to_cart.wc-forward{
+      .added_to_cart.wc-forward {
         opacity: 0;
       }
     }
   }
+}
+//unfound page
+.woocommerce-info-not-found{
+  background-color: rgba(245, 101, 66, 0.4);
+  padding: 8px;
+  padding-inline-start: 2%;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  font-family: 'light';
+  margin: 4% 0;
+}
+.woocomerce_products_not_found .products li .woocommerce-LoopProduct-link .onsale{
+  right: -65%;
+
+}
+
+
+//unfound page
+
+.page-title {
+  font-size: 2rem;
+  font-family: "bold";
+  color: var(--color-text);
+  margin: 2% 0 4%;
 }
