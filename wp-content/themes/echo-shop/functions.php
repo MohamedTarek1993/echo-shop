@@ -22,7 +22,7 @@ if (!defined('_S_VERSION')) {
  */
 function echo_shop_setup()
 {
-	/*
+	/*++
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on Echo-shop, use a find and replace

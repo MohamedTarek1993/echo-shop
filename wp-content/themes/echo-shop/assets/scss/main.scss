@@ -12,6 +12,7 @@
 # Base
 	- pre loader
 	- button up
+  -slider offer
   -stikey header
   -navbar
 	- home page
@@ -240,7 +241,15 @@ p {
     color: var(--color-primary);
   }
 }
-
+// content width
+size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
 //form content
 .input-group {
   position: relative;
@@ -498,7 +507,26 @@ input {
 }
 
 /* finish button up  */
+//start slider offer
+.slider_offer {
+  background: rgba(245, 101, 66, 0.4);
+  height: 3rem;
+  .swiper {
+    height: 3rem;
+    .swiper-slide {
+      background: inherit;
+      p {
+        color: var(--color-white);
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: "light";
+        margin-top: 8px;
+      }
+    }
+  }
+}
 
+//finish slider offer
 //start stikey header
 .stikey_header {
   padding: 10px 0;
@@ -1556,7 +1584,8 @@ input {
   }
 }
 //related products in product page
-.woocommerce_related_products ,.woocomerce_products_not_found {
+.woocommerce_related_products,
+.woocomerce_products_not_found {
   // this class add in relatef.php in woocomerce
   padding: 5% 0;
   h2 {
@@ -1665,21 +1694,23 @@ input {
   }
 }
 //unfound page
-.woocommerce-info-not-found{
+.woocommerce-info-not-found {
   background-color: rgba(245, 101, 66, 0.4);
   padding: 8px;
   padding-inline-start: 2%;
   border-radius: 8px;
   font-size: 1.2rem;
   color: var(--color-white);
-  font-family: 'light';
+  font-family: "light";
   margin: 4% 0;
 }
-.woocomerce_products_not_found .products li .woocommerce-LoopProduct-link .onsale{
+.woocomerce_products_not_found
+  .products
+  li
+  .woocommerce-LoopProduct-link
+  .onsale {
   right: -65%;
-
 }
-
 
 //unfound page
 

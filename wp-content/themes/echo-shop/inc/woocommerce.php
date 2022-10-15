@@ -22,20 +22,25 @@ function echo_shop_woocommerce_setup()
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 150,
-			'single_image_width'    => 300,
+			'thumbnail_image_width' => 255,
+			'single_image_width'    => 255,
 			'product_grid'          => array(
-				'default_rows'    => 3,
-				'min_rows'        => 1,
+				'default_rows'    => 10,
+				'min_rows'        => 5,
+				'max_rows'        => 10,
 				'default_columns' => 4,
-				'min_columns'     => 1,
-				'max_columns'     => 6,
+				'min_columns'     => 2,
+				'max_columns'     => 4,
 			),
 		)
 	);
 	add_theme_support('wc-product-gallery-zoom');
 	add_theme_support('wc-product-gallery-lightbox');
 	add_theme_support('wc-product-gallery-slider');
+
+	if (!isset($content_width)) {
+		$content_width = 600;
+	}
 }
 add_action('after_setup_theme', 'echo_shop_woocommerce_setup');
 
@@ -124,7 +129,7 @@ if (!function_exists('echo_shop_woocommerce_wrapper_before')) {
 	function echo_shop_woocommerce_wrapper_before()
 	{
 ?>
-		<main id="primary" class="site-main">
+		<div id="primary" class="site_main_eccommerce">
 		<?php
 	}
 }
@@ -141,7 +146,7 @@ if (!function_exists('echo_shop_woocommerce_wrapper_after')) {
 	function echo_shop_woocommerce_wrapper_after()
 	{
 		?>
-		</main><!-- #main -->
+		</div><!-- #main -->
 	<?php
 	}
 }
@@ -235,7 +240,75 @@ if (!function_exists('echo_shop_woocommerce_header_cart')) {
 <?php
 	}
 }
-// You can use all Woocommerce shortcodes here below. See available shortcodes here https://docs.woocommerce.com/document/woocommerce-shortcodes/
+
+/**
+ * 
+ *
+ * add class in archieve-producrt for shop page
+ * add col class for sidebar and product area
+ *
+ * @return void
+ */
+add_action('woocommerce_before_main_content', 'echo_woocommerce_open_section', 5);
+
+function echo_woocommerce_open_section()
+{
+	echo '<section class="echo_shop_section_card"><div class="container"><div class="row">';
+}
+
+add_action('woocommerce_after_main_content', 'echo_woocommerce_close_section', 5);
+
+function echo_woocommerce_close_section()
+{
+	echo '</div>  </div> </section> ';
+}
+
+//side bar
+
+//remove sidebar from orginal position
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
+//add sidebar from inside col
+add_action('woocommerce_before_main_content', 'echo_sidbar_add_col', 6);
+
+function echo_sidbar_add_col()
+{
+	echo '<div class="col-lg-3 col-md-4 col-12 order-2 order-md-1">';
+}
+
+add_action('woocommerce_before_main_content', 'woocommerce_get_sidebar', 7);
+
+add_action('woocommerce_before_main_content', 'echo_sidbar_close_col', 7);
+function echo_sidbar_close_col()
+{
+	echo ' </div>';
+}
+
+//side bar
+
+//product area
+add_action('woocommerce_before_main_content', 'echo_product_add_col', 8);
+
+function echo_product_add_col()
+{
+	echo '<div class="col-lg-9 col-md-8 col-12 order-1 order-md-2">';
+}
+
+add_action('woocommerce_after_main_content', 'echo_product_close_col', 4);
+
+function echo_product_close_col()
+{
+	echo ' </div>';
+}
+//product area
+
+
+/**
+ * not found page .
+ *
+ * Displayed  a not found page style and not found mesaage.
+ *
+ * @return void
+ */
 
 add_action('woocommerce_no_products_found', 'featured_products_on_not_found', 9);
 function featured_products_on_not_found()
@@ -246,8 +319,19 @@ function featured_products_on_not_found()
 	$message = __('No products were found matching your selection. Although... You may be interested in these products', 'echo-shop');
 
 	echo '<p class="woocommerce-info-not-found">' . $message . '</p>';
-    echo '<div class="woocomerce_products_not_found">' ;
+	echo '<div class="woocomerce_products_not_found">';
 	echo do_shortcode('[featured_products  limit =8 column=4]'); // Here goes your shortcode
-    echo '</div>' ;
-
+	echo '</div>';
 }
+
+/**
+ * 
+ *
+ * Disable Woocommerce Analytics & other bloat
+ *
+ * @return void
+ */
+add_filter('woocommerce_admin_disabled', '__return_true');
+
+
+// You can use all Woocommerce shortcodes here below. See available shortcodes here https://docs.woocommerce.com/document/woocommerce-shortcodes/

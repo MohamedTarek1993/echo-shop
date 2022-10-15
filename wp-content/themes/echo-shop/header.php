@@ -26,6 +26,54 @@
 	<?php wp_body_open(); ?>
 	<?php global $base; ?>
 
+	<!-- start offer slider -->
+	<section class="slider_offer">
+		<div class="container">
+			<div class="swiper mySwiper">
+				<?php
+				$slider_offer = new WP_Query(array( //start query
+					'post_type' => 'slider-offer',
+					'order' => 'DESC',
+					'orderby' => 'date',
+					'posts_per_page' => -1,
+
+				));
+
+				?>
+				<div class="swiper-wrapper">
+					<?php
+					if ($slider_offer->have_posts()) :
+						while ($slider_offer->have_posts()) :
+							$slider_offer->the_post();
+					?>
+							<div class="swiper-slide">
+								<p class="p-mt"><?php the_title(); ?></p>
+							</div> <!-- finish swiper slide -->
+					<?php
+						endwhile;
+					endif;
+					?>
+				</div>
+				<?php wp_reset_query(); // finish query 
+				?>
+			</div>
+		</div><!-- finish container -->
+	</section>
+	<!-- finish offer slider -->
+	<script>
+		//  swiper in stikey header 
+		var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 50,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+		});
+	</script>
+
+
+
 	<!-- start stikeky header -->
 	<section class="stikey_header">
 		<div class="container">
@@ -90,7 +138,7 @@
 				<div class="col-xl-3 col-lg-3 col-md-6 col-12">
 					<div class="card_shop">
 						<a href="<?php echo wc_get_cart_url(); ?>"> <i class="bi bi-bag"></i> </a>
-						<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart' , 'echo-shop'); ?>"><?php echo sprintf(_n('%d item', '%d items', WC()->cart->get_cart_contents_count()), WC()->cart->get_cart_contents_count()); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
+						<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'echo-shop'); ?>"><?php echo sprintf(_n('%d item', '%d items', WC()->cart->get_cart_contents_count()), WC()->cart->get_cart_contents_count()); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
 					</div>
 				</div><!-- finish col -->
 			</div><!-- finish row -->
