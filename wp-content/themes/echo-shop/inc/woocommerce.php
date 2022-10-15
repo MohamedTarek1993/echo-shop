@@ -93,6 +93,9 @@ function echo_shop_woocommerce_active_body_class($classes)
 }
 add_filter('body_class', 'echo_shop_woocommerce_active_body_class');
 
+
+
+
 /**
  * Related Products Args.
  *
