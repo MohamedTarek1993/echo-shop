@@ -1,0 +1,11 @@
+2022-10-16T09:20:32+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "echo_sidbar_add_col" not found or invalid function name in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\woocommerce\single-product.php(31): do_action('woocommerce_bef...')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\echo-shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\echo-shop\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php on line 307
+

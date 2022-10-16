@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2e29a369fecada7753232e4df9563ad4
+class ComposerStaticInitf1679011dcec7e6e85162030bf6d35f9
 {
     public static $prefixLengthsPsr4 = array (
         'S' => 
@@ -217,7 +217,7 @@ class ComposerStaticInit2e29a369fecada7753232e4df9563ad4
         'SkyVerge\\WooCommerce\\Facebook\\Jobs\\AbstractChainedJob' => __DIR__ . '/../..' . '/includes/Jobs/AbstractChainedJob.php',
         'SkyVerge\\WooCommerce\\Facebook\\Jobs\\CleanupSkyvergeFrameworkJobOptions' => __DIR__ . '/../..' . '/includes/Jobs/CleanupSkyvergeFrameworkJobOptions.php',
         'SkyVerge\\WooCommerce\\Facebook\\Jobs\\GenerateProductFeed' => __DIR__ . '/../..' . '/includes/Jobs/GenerateProductFeed.php',
-        'SkyVerge\\WooCommerce\\Facebook\\Jobs\\JobRegistry' => __DIR__ . '/../..' . '/includes/Jobs/JobRegistry.php',
+        'SkyVerge\\WooCommerce\\Facebook\\Jobs\\JobManager' => __DIR__ . '/../..' . '/includes/Jobs/JobManager.php',
         'SkyVerge\\WooCommerce\\Facebook\\Jobs\\LoggingTrait' => __DIR__ . '/../..' . '/includes/Jobs/LoggingTrait.php',
         'SkyVerge\\WooCommerce\\Facebook\\Lifecycle' => __DIR__ . '/../..' . '/includes/Lifecycle.php',
         'SkyVerge\\WooCommerce\\Facebook\\Locale' => __DIR__ . '/../..' . '/includes/Locale.php',
@@ -243,9 +243,9 @@ class ComposerStaticInit2e29a369fecada7753232e4df9563ad4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2e29a369fecada7753232e4df9563ad4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2e29a369fecada7753232e4df9563ad4::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit2e29a369fecada7753232e4df9563ad4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf1679011dcec7e6e85162030bf6d35f9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf1679011dcec7e6e85162030bf6d35f9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf1679011dcec7e6e85162030bf6d35f9::$classMap;
 
         }, null, ClassLoader::class);
     }
