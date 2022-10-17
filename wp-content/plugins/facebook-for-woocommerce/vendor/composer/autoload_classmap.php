@@ -186,7 +186,7 @@ return array(
     'SkyVerge\\WooCommerce\\Facebook\\Jobs\\AbstractChainedJob' => $baseDir . '/includes/Jobs/AbstractChainedJob.php',
     'SkyVerge\\WooCommerce\\Facebook\\Jobs\\CleanupSkyvergeFrameworkJobOptions' => $baseDir . '/includes/Jobs/CleanupSkyvergeFrameworkJobOptions.php',
     'SkyVerge\\WooCommerce\\Facebook\\Jobs\\GenerateProductFeed' => $baseDir . '/includes/Jobs/GenerateProductFeed.php',
-    'SkyVerge\\WooCommerce\\Facebook\\Jobs\\JobRegistry' => $baseDir . '/includes/Jobs/JobRegistry.php',
+    'SkyVerge\\WooCommerce\\Facebook\\Jobs\\JobManager' => $baseDir . '/includes/Jobs/JobManager.php',
     'SkyVerge\\WooCommerce\\Facebook\\Jobs\\LoggingTrait' => $baseDir . '/includes/Jobs/LoggingTrait.php',
     'SkyVerge\\WooCommerce\\Facebook\\Lifecycle' => $baseDir . '/includes/Lifecycle.php',
     'SkyVerge\\WooCommerce\\Facebook\\Locale' => $baseDir . '/includes/Locale.php',

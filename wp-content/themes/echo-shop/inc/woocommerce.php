@@ -252,57 +252,67 @@ if (!function_exists('echo_shop_woocommerce_header_cart')) {
  *
  * @return void
  */
-add_action('woocommerce_before_main_content', 'echo_woocommerce_open_section', 5);
-
-function echo_woocommerce_open_section()
+function echo_woocmmerce_modfied()
 {
-	echo '<section class="echo_shop_section_card"><div class="container"><div class="row">';
+	add_action('woocommerce_before_main_content', 'echo_woocommerce_open_section', 5);
+
+	function echo_woocommerce_open_section()
+	{
+		echo '<section class="echo_shop_section_card"><div class="container"><div class="row">';
+	}
+
+	add_action('woocommerce_after_main_content', 'echo_woocommerce_close_section', 5);
+
+	function echo_woocommerce_close_section()
+	{
+		echo '</div>  </div> </section> ';
+	}
+
+	//side bar
+
+	//remove sidebar from orginal position
+	remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
+
+	if (is_shop()) {
+		//add sidebar from inside col
+		add_action('woocommerce_before_main_content', 'echo_sidbar_add_col', 6);
+		function echo_sidbar_add_col()
+		{
+			echo '<div class="col-lg-3 col-md-4 col-12 order-2 order-md-1">';
+		}
+
+		add_action('woocommerce_before_main_content', 'woocommerce_get_sidebar', 7);
+
+		add_action('woocommerce_before_main_content', 'echo_sidbar_close_col', 7);
+		function echo_sidbar_close_col()
+		{
+			echo ' </div>';
+		}
+	}
+
+	//side bar
+
+	//product area
+	add_action('woocommerce_before_main_content', 'echo_product_add_col', 8);
+
+	function echo_product_add_col()
+	{
+		if (is_shop()) {
+			echo '<div class="col-lg-9 col-md-8 col-12 order-1 order-md-2">';
+		} else {
+			echo '<div class="col-12">';
+		}
+	}
+
+	add_action('woocommerce_after_main_content', 'echo_product_close_col', 4);
+
+	function echo_product_close_col()
+	{
+		echo ' </div>';
+	}
+	//product area	
 }
-
-add_action('woocommerce_after_main_content', 'echo_woocommerce_close_section', 5);
-
-function echo_woocommerce_close_section()
-{
-	echo '</div>  </div> </section> ';
-}
-
-//side bar
-
-//remove sidebar from orginal position
-remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
-//add sidebar from inside col
-add_action('woocommerce_before_main_content', 'echo_sidbar_add_col', 6);
-
-function echo_sidbar_add_col()
-{
-	echo '<div class="col-lg-3 col-md-4 col-12 order-2 order-md-1">';
-}
-
-add_action('woocommerce_before_main_content', 'woocommerce_get_sidebar', 7);
-
-add_action('woocommerce_before_main_content', 'echo_sidbar_close_col', 7);
-function echo_sidbar_close_col()
-{
-	echo ' </div>';
-}
-
-//side bar
-
-//product area
-add_action('woocommerce_before_main_content', 'echo_product_add_col', 8);
-
-function echo_product_add_col()
-{
-	echo '<div class="col-lg-9 col-md-8 col-12 order-1 order-md-2">';
-}
-
-add_action('woocommerce_after_main_content', 'echo_product_close_col', 4);
-
-function echo_product_close_col()
-{
-	echo ' </div>';
-}
-//product area
+add_action('wp', 'echo_woocmmerce_modfied');
 
 
 /**

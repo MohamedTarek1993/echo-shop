@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Facebook for WooCommerce plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Facebook for WooCommerce 2.6.25\n"
+"Project-Id-Version: Facebook for WooCommerce 2.6.27\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/facebook-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-10-04T11:52:32+00:00\n"
+"POT-Creation-Date: 2022-10-14T10:07:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: facebook-for-woocommerce\n"
@@ -982,26 +982,30 @@ msgstr ""
 msgid "Sync disabled in product field."
 msgstr ""
 
-#: includes/ProductSync/ProductValidator.php:302
+#: includes/ProductSync/ProductValidator.php:277
+msgid "Product excluded by wc_facebook_should_sync_product filter."
+msgstr ""
+
+#: includes/ProductSync/ProductValidator.php:313
 msgid "If product is not simple, variable or variation it must have a price."
 msgstr ""
 
-#: includes/ProductSync/ProductValidator.php:328
+#: includes/ProductSync/ProductValidator.php:339
 msgid "Product description is all capital letters. Please change the description to sentence case in order to allow synchronization of your product."
 msgstr ""
 
-#: includes/ProductSync/ProductValidator.php:331
+#: includes/ProductSync/ProductValidator.php:342
 msgid "Product description is too long. Maximum allowed length is 5000 characters."
 msgstr ""
 
-#: includes/ProductSync/ProductValidator.php:350
+#: includes/ProductSync/ProductValidator.php:361
 msgid "Product title is all capital letters. Please change the title to sentence case in order to allow synchronization of your product."
 msgstr ""
 
-#: includes/ProductSync/ProductValidator.php:353
+#: includes/ProductSync/ProductValidator.php:364
 msgid "Product title is too long. Maximum allowed length is 150 characters."
 msgstr ""
 
-#: includes/ProductSync/ProductValidator.php:377
+#: includes/ProductSync/ProductValidator.php:388
 msgid "Too many attributes selected for product. Use 4 or less."
 msgstr ""
