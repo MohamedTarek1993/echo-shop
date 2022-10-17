@@ -22,8 +22,8 @@ function echo_shop_woocommerce_setup()
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 255,
-			'single_image_width'    => 255,
+			'thumbnail_image_width' => 300,
+			'single_image_width'    => 300,
 			'product_grid'          => array(
 				'default_rows'    => 10,
 				'min_rows'        => 5,
@@ -346,5 +346,12 @@ function featured_products_on_not_found()
  */
 add_filter('woocommerce_admin_disabled', '__return_true');
 
+/**
+ * 
+ *
+ * Disable  postcode
+ *
+ * @return void
+ */
 
 // You can use all Woocommerce shortcodes here below. See available shortcodes here https://docs.woocommerce.com/document/woocommerce-shortcodes/

@@ -242,13 +242,13 @@ p {
   }
 }
 // content width
-size-auto, 
+size-auto,
 .size-full,
 .size-large,
 .size-medium,
 .size-thumbnail {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 //form content
 .input-group {
@@ -926,24 +926,27 @@ input {
           .input-text {
             border-radius: 8px;
             padding-inline-start: 2%;
-            padding: 8px 4px;
+            padding: 5px 4px;
             background-color: rgba(0, 0, 0, 0);
             color: var(--color-pargraph);
             font-family: "regular";
             border: 1px solid var(--color-primary) !important;
+            width: 89px;
+
           }
           .button {
             background-color: transparent;
             border: 1px solid var(--color-primary);
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--color-primary);
             font-family: "regular";
             display: inline-block;
             margin-top: 0;
-            margin-inline-start: 3%;
+            margin-inline-start: 1%;
             padding: 5px 12px;
             border-radius: 8px;
             transition: 0.25s all ease-in-out;
+            width: 11%;
             &:hover {
               background-color: var(--color-primary);
               color: white;
@@ -951,24 +954,25 @@ input {
           }
         }
         .button {
-          background-color: transparent;
-          border: 1px solid var(--color-primary);
-          border-radius: 8px;
-          font-size: 1.2rem;
-          color: var(--color-primary);
-          font-family: "regular";
-          display: inline-block;
-          margin: 10px 0;
-          margin-inline-start: 2%;
-          padding: 5px 12px;
-          border-radius: 8px;
-          transition: 0.25s all ease-in-out;
-          width: 17%;
+          background-color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        border-radius: 8px;
+        font-size: 1.2rem;
+        color: var(--color-white);
+        font-family: "regular";
+        padding: 5px 12px;
+        border-radius: 8px;
+        transition: 0.25s all ease-in-out;
+        width: 33%;
+        margin: 3% auto 2%;
 
-          &:hover {
-            background-color: var(--color-primary);
-            color: white;
-          }
+
+        &:hover {
+          background-color: var(--color-white);
+          color: var(--color-primary);
+        }
+
+         
         }
       }
     }
@@ -980,7 +984,7 @@ input {
       font-family: "bold";
     }
     .shop_table {
-      width: 100%;
+      width: 50%;
       tbody {
         tr {
           border: 1px solid #f5f5f5;
@@ -1036,9 +1040,12 @@ input {
     margin: 2% 0 4%;
     .woocommerce-info {
       font-size: 1.2rem;
+      border: 1px solid #3d9cd2;
+      border-top-width: 16px;
+      background-color: transparent;
       font-family: "light";
       padding: 9px 14px;
-      color: white;
+      color: var(--color-text);
       border-radius: 8px;
       a {
         font-size: 1rem;
@@ -1264,16 +1271,26 @@ input {
   }
   //checkout page
   .woocommerce-notices-wrapper {
+    .woocommerce-error{
+      background-color: rgba(245, 101, 66, 0.4);
+      li{
+        text-align: center;
+      }
+    }
     .woocommerce-message,
     .cart-empty {
       padding: 10px 4px;
       border-radius: 8px;
-      color: white;
+      color: var(--color-text);
       font-size: 1rem;
       margin-bottom: 3%;
       font-family: "regular";
-      width: 38%;
+      width: 100%;
       text-align: center;
+      border: 1px solid #0f834d;
+    border-top-width: 16px;
+    background-color: transparent;
+    margin-top: 2%;
 
       a {
         transition: 0.25s all ease-in-out;
@@ -1307,14 +1324,17 @@ input {
   }
   .cart-empty {
     padding: 10px 4px;
-    border-radius: 8px;
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 3%;
-    font-family: "regular";
-    width: 100%;
-    text-align: center;
-    background-color: rgba(245, 101, 66, 0.4);
+      border-radius: 8px;
+      color: var(--color-text);
+      font-size: 1rem;
+      margin-bottom: 3%;
+      font-family: "regular";
+      width: 100%;
+      text-align: center;
+      border: 1px solid rgba(245, 101, 66, 0.4) ;
+    border-top-width: 16px;
+    background-color: transparent;
+    margin-top: 2%;
   }
 
   //shop page
@@ -1374,7 +1394,7 @@ input {
     padding: 8px 0;
     margin-bottom: 2%;
     .woocommerce-info {
-      color: white;
+      color: var(--color-text);
       font-size: 1rem;
       font-family: "regular";
       text-align: center;
@@ -1393,6 +1413,7 @@ input {
 }
 .entry-summary {
   // add this class in add to cart -> simple page in woocommerce
+  padding-inline-start: 15%;
   .cart_eoocomerce_modify {
     .quantity {
       .input-text {
@@ -1720,6 +1741,10 @@ input {
   color: var(--color-text);
   margin: 2% 0 4%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 701ec86d0c213f14dc2dbd625bb95419d1ccbbc7
 //start shop page
 .echo_shop_section_card {
   padding: 5% 0;
@@ -1904,4 +1929,8 @@ input {
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
 //finish shop page
+=======
+//finish shop page
+>>>>>>> 701ec86d0c213f14dc2dbd625bb95419d1ccbbc7
