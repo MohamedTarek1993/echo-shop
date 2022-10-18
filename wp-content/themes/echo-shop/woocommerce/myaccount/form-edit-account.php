@@ -45,7 +45,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 	</p>
 
 	<fieldset>
-		<legend><?php esc_html_e( 'Password change', 'woocommerce' ); ?></legend>
+		<legend class="password"><?php esc_html_e( 'Password change', 'woocommerce' ); ?></legend>
 
 		<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 			<label for="password_current"><?php esc_html_e( 'Current password (leave blank to leave unchanged)', 'woocommerce' ); ?></label>
@@ -66,7 +66,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 
 	<p>
 		<?php wp_nonce_field( 'save_account_details', 'save-account-details-nonce' ); ?>
-		<button type="submit" class="woocommerce-Button button" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'woocommerce' ); ?>"><?php esc_html_e( 'Save changes', 'woocommerce' ); ?></button>
+		<button type="submit" class="woocommerce-Button button btn" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'woocommerce' ); ?>"><?php esc_html_e( 'Save changes', 'woocommerce' ); ?></button>
 		<input type="hidden" name="action" value="save_account_details" />
 	</p>
 

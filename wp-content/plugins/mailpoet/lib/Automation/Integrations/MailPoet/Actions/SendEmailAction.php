@@ -7,13 +7,11 @@ if (!defined('ABSPATH')) exit;
 
 use MailPoet\Automation\Engine\Data\Step;
 use MailPoet\Automation\Engine\Data\StepRunArgs;
-use MailPoet\Automation\Engine\Data\Workflow;
-use MailPoet\Automation\Engine\Workflows\Action;
-use MailPoet\Automation\Engine\Workflows\Subject;
+use MailPoet\Automation\Engine\Data\StepValidationArgs;
+use MailPoet\Automation\Engine\Integration\Action;
+use MailPoet\Automation\Engine\Integration\ValidationException;
 use MailPoet\Automation\Integrations\MailPoet\Payloads\SegmentPayload;
 use MailPoet\Automation\Integrations\MailPoet\Payloads\SubscriberPayload;
-use MailPoet\Automation\Integrations\MailPoet\Subjects\SegmentSubject;
-use MailPoet\Automation\Integrations\MailPoet\Subjects\SubscriberSubject;
 use MailPoet\Entities\NewsletterEntity;
 use MailPoet\Entities\SubscriberEntity;
 use MailPoet\InvalidStateException;
@@ -65,15 +63,20 @@ class SendEmailAction implements Action {
   }
 
   public function getArgsSchema(): ObjectSchema {
+    // strings are required but some can be empty ('')
+    $string = Builder::string()->required()->default('');
+    $nonEmptyString = Builder::string()->required()->minLength(1);
+
     return Builder::object([
-      'subject' => Builder::string()->default(__('Subject', 'mailpoet')),
-      'preheader' => Builder::string(),
-      'sender_name' => Builder::string()->default($this->settings->get('sender.name')),
-      'sender_address' => Builder::string()->default($this->settings->get('sender.address')),
-      'reply_to_name' => Builder::string()->default($this->settings->get('reply_to.name')),
-      'reply_to_address' => Builder::string()->default($this->settings->get('reply_to.address')),
-      'ga_campaign' => Builder::string(),
-      'name' => Builder::string()->default(__('Send email', 'mailpoet')),
+      'email_id' => Builder::integer()->required(),
+      'name' => $nonEmptyString->default(__('Send email', 'mailpoet')),
+      'subject' => $nonEmptyString->default(__('Subject', 'mailpoet')),
+      'preheader' => $string,
+      'sender_name' => $nonEmptyString->default($this->settings->get('sender.name', '')),
+      'sender_address' => $nonEmptyString->default($this->settings->get('sender.address', '')),
+      'reply_to_name' => $string->default($this->settings->get('reply_to.name', '')),
+      'reply_to_address' => $nonEmptyString->default($this->settings->get('reply_to.address', '')),
+      'ga_campaign' => $string,
     ]);
   }
 
@@ -84,21 +87,16 @@ class SendEmailAction implements Action {
     ];
   }
 
-  public function isValid(array $subjects, Step $step, Workflow $workflow): bool {
+  public function validate(StepValidationArgs $args): void {
     try {
-      $this->getEmailForStep($step);
+      $this->getEmailForStep($args->getStep());
     } catch (InvalidStateException $exception) {
-      return false;
+      $emailId = $args->getStep()->getArgs()['email_id'] ?? '';
+      throw new ValidationException(
+        // translators: %s is the ID of email.
+        sprintf(__("Automation email with ID '%s' not found.", 'mailpoet'), $emailId)
+      );
     }
-
-    $segmentSubjects = array_filter($subjects, function (Subject $subject) {
-      return $subject->getKey() === SegmentSubject::KEY;
-    });
-    $subscriberSubjects = array_filter($subjects, function (Subject $subject) {
-      return $subject->getKey() === SubscriberSubject::KEY;
-    });
-
-    return count($segmentSubjects) === 1 && count($subscriberSubjects) === 1;
   }
 
   public function run(StepRunArgs $args): void {
@@ -140,7 +138,7 @@ class SendEmailAction implements Action {
 
   public function saveEmailSettings(Step $step): void {
     $args = $step->getArgs();
-    if (!isset($args['email_id'])) {
+    if (!isset($args['email_id']) || !$args['email_id']) {
       return;
     }
 
@@ -167,7 +165,10 @@ class SendEmailAction implements Action {
       'type' => NewsletterEntity::TYPE_AUTOMATION,
     ]);
     if (!$email) {
-      throw InvalidStateException::create()->withMessage(sprintf("Automation email with ID '%s' not found.", $emailId));
+      throw InvalidStateException::create()->withMessage(
+        // translators: %s is the ID of email.
+        sprintf(__("Automation email with ID '%s' not found.", 'mailpoet'), $emailId)
+      );
     }
     return $email;
   }

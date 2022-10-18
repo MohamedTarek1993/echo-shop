@@ -108,7 +108,7 @@ setTimeout(initMailpoetTranslation, 250);
 EOL;
     $this->wp->wpAddInlineScript(
       'mailpoet_public',
-      sprintf($inlineScript, $ajaxFailedErrorMessage),
+      sprintf($inlineScript, esc_js($ajaxFailedErrorMessage)),
       'after'
     );
   }

@@ -87,6 +87,14 @@ class API {
     return $this->subscribers->getSubscriber($subscriberEmail);
   }
 
+  public function getSubscribers(array $filter = [], int $limit = 50, int $offset = 0): array {
+    return $this->subscribers->getSubscribers($filter, $limit, $offset);
+  }
+
+  public function getSubscribersCount(array $filter = []): int {
+    return $this->subscribers->getSubscribersCount($filter);
+  }
+
   public function isSetupComplete() {
     return !(
       $this->changelog->shouldShowWelcomeWizard()
