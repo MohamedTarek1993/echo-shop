@@ -14,11 +14,9 @@ use MailPoet\Automation\Engine\Utils\Json;
 class Exceptions {
   private const MIGRATION_FAILED = 'mailpoet_automation_migration_failed';
   private const DATABASE_ERROR = 'mailpoet_automation_database_error';
-  private const API_METHOD_NOT_ALLOWED = 'mailpoet_automation_api_method_not_allowed';
-  private const API_NO_JSON_BODY = 'mailpoet_automation_api_no_json_body';
   private const JSON_NOT_OBJECT = 'mailpoet_automation_json_not_object';
   private const WORKFLOW_NOT_FOUND = 'mailpoet_automation_workflow_not_found';
-  private const WORKFLOW_VERSION_NOT_FOUND = 'mailpoet_automation_workflowversion_not_found';
+  private const WORKFLOW_VERSION_NOT_FOUND = 'mailpoet_automation_workflow_version_not_found';
   private const WORKFLOW_RUN_NOT_FOUND = 'mailpoet_automation_workflow_run_not_found';
   private const WORKFLOW_STEP_NOT_FOUND = 'mailpoet_automation_workflow_step_not_found';
   private const WORKFLOW_TRIGGER_NOT_FOUND = 'mailpoet_automation_workflow_trigger_not_found';
@@ -31,7 +29,10 @@ class Exceptions {
   private const MULTIPLE_PAYLOADS_FOUND = 'mailpoet_automation_multiple_payloads_found';
   private const WORKFLOW_STRUCTURE_MODIFICATION_NOT_SUPPORTED = 'mailpoet_automation_workflow_structure_modification_not_supported';
   private const WORKFLOW_STRUCTURE_NOT_VALID = 'mailpoet_automation_workflow_structure_not_valid';
-  private const WORKFLOW_STEP_MODIFIED_WHEN_UNKNOWN = 'mailpoet_automation_workflow_step_modified_when_unknon';
+  private const WORKFLOW_STEP_MODIFIED_WHEN_UNKNOWN = 'mailpoet_automation_workflow_step_modified_when_unknown';
+  private const WORKFLOW_NOT_VALID = 'mailpoet_automation_workflow_not_valid';
+  private const MISSING_REQUIRED_SUBJECTS = 'mailpoet_automation_missing_required_subjects';
+  private const WORKFLOW_NOT_TRASHED = 'mailpoet_automation_workflow_not_trashed';
 
   public function __construct() {
     throw new InvalidStateException(
@@ -51,19 +52,6 @@ class Exceptions {
       ->withErrorCode(self::DATABASE_ERROR)
       // translators: %s is the error message.
       ->withMessage(sprintf(__('Database error: %s', 'mailpoet'), $error));
-  }
-
-  public static function apiMethodNotAllowed(): UnexpectedValueException {
-    return UnexpectedValueException::create()
-      ->withStatusCode(405)
-      ->withErrorCode(self::API_METHOD_NOT_ALLOWED)
-      ->withMessage(__('Method not allowed.', 'mailpoet'));
-  }
-
-  public static function apiNoJsonBody(): UnexpectedValueException {
-    return UnexpectedValueException::create()
-      ->withErrorCode(self::API_NO_JSON_BODY)
-      ->withMessage(__('No JSON body passed.', 'mailpoet'));
   }
 
   public static function jsonNotObject(string $json): UnexpectedValueException {
@@ -178,11 +166,12 @@ class Exceptions {
       ->withMessage(__("Workflow structure modification not supported.", 'mailpoet'));
   }
 
-  public static function workflowStructureNotValid(string $detail): UnexpectedValueException {
+  public static function workflowStructureNotValid(string $detail, string $ruleId): UnexpectedValueException {
     return UnexpectedValueException::create()
       ->withErrorCode(self::WORKFLOW_STRUCTURE_NOT_VALID)
       // translators: %s is a detailed information
-      ->withMessage(sprintf(__("Invalid workflow structure: %s", 'mailpoet'), $detail));
+      ->withMessage(sprintf(__("Invalid workflow structure: %s", 'mailpoet'), $detail))
+      ->withErrors(['rule_id' => $ruleId]);
   }
 
   public static function workflowStepModifiedWhenUnknown(Step $step): UnexpectedValueException {
@@ -197,5 +186,33 @@ class Exceptions {
           $step->getId()
         )
       );
+  }
+
+  public static function workflowNotValid(string $detail, array $errors): UnexpectedValueException {
+    return UnexpectedValueException::create()
+      ->withErrorCode(self::WORKFLOW_NOT_VALID)
+      // translators: %s is a detailed information
+      ->withMessage(sprintf(__("Workflow validation failed: %s", 'mailpoet'), $detail))
+      ->withErrors($errors);
+  }
+
+  public static function missingRequiredSubjects(Step $step, array $missingSubjectKeys): UnexpectedValueException {
+    return UnexpectedValueException::create()
+      ->withErrorCode(self::MISSING_REQUIRED_SUBJECTS)
+      // translators: %1$s is the key of the step, %2$s are the missing subject keys.
+      ->withMessage(
+        sprintf(
+          __("Step with ID '%1\$s' is missing required subjects with keys: %2\$s", 'mailpoet'),
+          $step->getId(),
+          implode(', ', $missingSubjectKeys)
+        )
+      );
+  }
+
+  public static function workflowNotTrashed(int $id): UnexpectedValueException {
+    return UnexpectedValueException::create()
+      ->withErrorCode(self::WORKFLOW_NOT_TRASHED)
+      // translators: %d is the ID of the workflow.
+      ->withMessage(sprintf(__("Can't delete workflow with ID '%d' because it was not trashed.", 'mailpoet'), $id));
   }
 }

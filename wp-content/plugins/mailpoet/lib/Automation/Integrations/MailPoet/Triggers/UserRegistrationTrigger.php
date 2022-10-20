@@ -6,9 +6,10 @@ if (!defined('ABSPATH')) exit;
 
 
 use MailPoet\Automation\Engine\Data\StepRunArgs;
+use MailPoet\Automation\Engine\Data\StepValidationArgs;
 use MailPoet\Automation\Engine\Data\Subject;
 use MailPoet\Automation\Engine\Hooks;
-use MailPoet\Automation\Engine\Workflows\Trigger;
+use MailPoet\Automation\Engine\Integration\Trigger;
 use MailPoet\Automation\Integrations\MailPoet\Payloads\SegmentPayload;
 use MailPoet\Automation\Integrations\MailPoet\Payloads\SubscriberPayload;
 use MailPoet\Automation\Integrations\MailPoet\Subjects\SegmentSubject;
@@ -57,6 +58,9 @@ class UserRegistrationTrigger implements Trigger {
       SegmentSubject::KEY,
       SubscriberSubject::KEY,
     ];
+  }
+
+  public function validate(StepValidationArgs $args): void {
   }
 
   public function registerHooks(): void {

@@ -1994,3 +1994,323 @@ input {
   align-items: center;
 }
 //finish shop page
+
+//start my account page
+.woocommerce-MyAccount-navigation {
+  padding: 3% 0;
+  ul {
+    border: 1px solid var(--color-pargraph);
+    border-radius: 8px;
+    box-shadow: 4px 7px 34px -1px rgba(0, 0, 0, 0.1);
+    li {
+      padding: 6% 0;
+      border-bottom: 1px solid #f5f5f5;
+      text-align: center;
+      transition: 0.3s all ease-in-out;
+      &:hover {
+        background-color: rgba(245, 101, 66, 0.4);
+        a {
+          color: var(--color-white);
+          font-family: "bold";
+        }
+      }
+      a {
+        font-size: 1.2rem;
+        color: var(--color-text);
+        font-family: "regular";
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    li.is-active {
+      background-color: rgba(245, 101, 66, 0.4);
+      a {
+        color: var(--color-white);
+        font-family: "bold";
+      }
+    }
+  }
+}
+.woocommerce-myaccount-content {
+  //this class add in woocommerce.ohp
+  padding: 0% 5%;
+  animation: slide-up 1s linear;
+  p {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    font-family: "regular";
+  }
+  .woocommerce-Address {
+    width: 100%;
+    .woocommerce-Address-title {
+      margin-top: 3%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      background-color: rgba(245, 101, 66, 0.4);
+      padding: 2%;
+      border-radius: 8px;
+      h3 {
+        font-size: 1.2rem;
+        color: var(--color-pargraph);
+        font-family: "bold";
+        margin-bottom: 0;
+      }
+      a {
+        color: var(--color-white);
+        font-size: 1.2rem;
+        font-family: "bold";
+      }
+    }
+    .information {
+      //this class add in my-adress.php
+      border: 1px solid var(--color-pargraph);
+      border-radius: 8px;
+      padding: 2%;
+      color: var(--color-pargraph);
+      font-family: regular;
+      font-size: 1rem;
+      margin: 2% 0;
+      box-shadow: 4px 7px 34px -1px rgba(0, 0, 0, 0.1);
+    }
+  }
+  form {
+    p {
+      margin-bottom: 15px;
+      span {
+        font-size: 0.8rem;
+        color: var(--color-pargraph);
+        display: block;
+      }
+
+      label {
+        display: block;
+        font-size: 1.1rem;
+        padding-bottom: 5px;
+        .required {
+          color: var(--color-primary);
+          display: inline-block;
+        }
+      }
+      .woocommerce-Input {
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
+        width: 95%;
+        font-size: 0.9rem;
+        padding: 10px 0;
+        padding-inline-start: 5px;
+      }
+    }
+    .password {
+      //this class add in form-edit-account.php
+      margin-top: 5%;
+      margin-bottom: 3%;
+      font-size: 1.8rem;
+      font-family: "bold";
+      color: var(--color-primary);
+    }
+    .woocommerce-Button {
+      border: 1px solid var(--color-primary);
+      border-radius: 8px;
+      background-color: transparent;
+      transition: 0.3s all ease-in-out;
+      color: var(--color-primary);
+      width: 30%;
+      margin: 5% 0 2%;
+      font-size: 1.1rem;
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+      }
+    }
+  }
+  .woocommerce-info {
+    background-color: transparent;
+    border: 1px solid var(--color-text);
+    border-top: 16px solid #3d9cd2;
+    border-radius: 8px;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-text);
+    font-family: "regular";
+    a {
+      font-family: "bold";
+      font-size: 1.5rem;
+      color: var(--color-primary);
+    }
+  }
+  .woocommerce-orders-table {
+    width: 100%;
+    border-radius: 8px;
+    thead {
+      background-color: rgba(245, 101, 66, 0.4);
+      border-radius: 8px;
+      height: 50px;
+      border-radius: 8px;
+      tr {
+        th {
+          text-align: center;
+          font-size: 1.1rem;
+          color: var(--color-white);
+          font-family: "regular";
+        }
+      }
+    }
+    tbody {
+      border: 1px solid #f5f5f5;
+      border-radius: 8px;
+
+      tr {
+        border-bottom: 1px solid #f5f5f5;
+        height: 100px;
+
+        .woocommerce-orders-table__cell-order-number {
+          font-family: "bold";
+          transition: 0.25s all ease-in-out;
+          text-align: center;
+
+          &:hover {
+            a {
+              color: var(--color-text);
+            }
+          }
+        }
+        .woocommerce-orders-table__cell-order-date {
+          font-family: "regular";
+          color: var(--color-text);
+          text-align: center;
+        }
+        .woocommerce-orders-table__cell-order-status {
+          font-size: 0.8rem;
+          text-align: center;
+          font-family: "regular";
+          display: flex;
+          padding: 5%;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin: 43% 0px;
+          border-radius: 8px;
+        }
+        .woocommerce-orders-table__cell-order-total {
+          font-size: 0.9rem;
+          color: var(--color-text);
+          font-family: "regular";
+          text-align: center;
+          .woocommerce-Price-currencySymbol {
+            color: var(--color-primary);
+            font-family: "bold";
+          }
+        }
+        .woocommerce-orders-table__cell-order-actions {
+          text-align: center;
+          a {
+            font-size: 0.8rem;
+            color: var(--color-white);
+            padding: 3px;
+            font-family: "regular";
+            border-radius: 8px;
+            margin-bottom: 6px;
+            transition: 0.3s all ease-in-out;
+          }
+          a.view {
+            background-color: rgba(0, 128, 0, 0.3);
+            &:hover {
+              color: rgba(0, 128, 0, 0.3);
+              background-color: var(--color-white);
+              border: 1px solid rgba(0, 128, 0, 0.3);
+            }
+          }
+          a.pay {
+            background-color: rgba(245, 101, 66, 0.4);
+            &:hover {
+              color: rgba(245, 101, 66, 0.4);
+              background-color: var(--color-white);
+              border: 1px solid rgba(245, 101, 66, 0.4);
+            }
+          }
+          a.cancel {
+            background-color: rgba(255, 0, 0, 0.8);
+            &:hover {
+              color: rgba(255, 0, 0, 0.8);
+              background-color: var(--color-white);
+              border: 1px solid rgba(255, 0, 0, 0.8);
+            }
+          }
+        }
+      }
+      //in fail case
+      .woocommerce-orders-table__row--status-failed {
+        .woocommerce-orders-table__cell-order-status {
+          background-color: rgba(255, 0, 0, 0.8);
+          color: var(--color-white);
+        }
+      }
+
+      //in proccesing case
+      .woocommerce-orders-table__row--status-processing {
+        .woocommerce-orders-table__cell-order-status {
+          background-color: rgba(128, 128, 128, 0.4);
+          color: var(--color-white);
+        }
+      }
+
+      //in pending case
+      .woocommerce-orders-table__row--status-pending {
+        .woocommerce-orders-table__cell-order-status {
+          background-color: rgba(128, 128, 128, 0.7);
+          color: var(--color-white);
+        }
+      }
+
+      //in holding case
+      .woocommerce-orders-table__row--status-on-hold {
+        .woocommerce-orders-table__cell-order-status {
+          background-color: rgba(255, 165, 0, 0.5);
+          color: var(--color-text);
+        }
+      }
+
+      //in complete case
+      .woocommerce-orders-table__row--status-completed {
+        .woocommerce-orders-table__cell-order-status {
+          background-color: rgba(245, 101, 66, 0.4);
+          color: var(--color-white);
+        }
+      }
+
+      //in cancel case
+      .woocommerce-orders-table__row--status-cancelled {
+        .woocommerce-orders-table__cell-order-status {
+          background-color: rgba(255, 0, 0, 0.4);
+          color: var(--color-white);
+        }
+      }
+
+      //in refunded case
+      .woocommerce-orders-table__row--status-on-refunded {
+        .woocommerce-orders-table__cell-order-status {
+          background-color: rgba(128, 128, 128, 0.1);
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+//finish my account page

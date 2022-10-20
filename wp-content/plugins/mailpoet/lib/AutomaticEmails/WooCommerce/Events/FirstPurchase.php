@@ -191,7 +191,7 @@ class FirstPurchase {
         'subscriber_id' => $subscriber->getId(),
       ]
     );
-    $this->scheduler->scheduleAutomaticEmail(WooCommerce::SLUG, self::SLUG, $checkEmailWasNotScheduled, $subscriber->getId(), $meta);
+    $this->scheduler->scheduleAutomaticEmail(WooCommerce::SLUG, self::SLUG, $checkEmailWasNotScheduled, $subscriber, $meta);
   }
 
   public function getCustomerOrderCount($customerEmail) {

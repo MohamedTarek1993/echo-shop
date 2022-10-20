@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the MailPoet package.
 msgid ""
 msgstr ""
-"Project-Id-Version: MailPoet 3.100.2\n"
+"Project-Id-Version: MailPoet 3.101.0\n"
 "Report-Msgid-Bugs-To: http://support.mailpoet.com/\n"
-"POT-Creation-Date: 2022-10-10 16:15:34+00:00\n"
+"POT-Creation-Date: 2022-10-17 13:13:43+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -253,7 +253,7 @@ msgstr ""
 
 #: lib/API/JSON/v1/Segments.php:99 lib/API/JSON/v1/Segments.php:161
 #: lib/API/JSON/v1/Segments.php:171 lib/API/JSON/v1/Segments.php:235
-#: lib/API/JSON/v1/Segments.php:257 lib/API/MP/v1/Subscribers.php:314
+#: lib/API/JSON/v1/Segments.php:257 lib/API/MP/v1/Subscribers.php:365
 msgid "This list does not exist."
 msgstr ""
 
@@ -313,7 +313,7 @@ msgstr ""
 msgid "Failed sending task not found!"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:86 lib/API/JSON/v1/Services.php:160
+#: lib/API/JSON/v1/Services.php:86 lib/API/JSON/v1/Services.php:162
 msgid "Please specify a key."
 msgstr ""
 
@@ -321,87 +321,91 @@ msgstr ""
 msgid "Your MailPoet Sending Service key has been successfully validated"
 msgstr ""
 
+#: lib/API/JSON/v1/Services.php:115 lib/API/JSON/v1/Services.php:181
+msgid "Your Premium key has been successfully validated, but is not valid for MailPoet Sending Service"
+msgstr ""
+
 #. translators: %s is the expiration date.
 
-#: lib/API/JSON/v1/Services.php:117
+#: lib/API/JSON/v1/Services.php:119
 msgid "Your MailPoet Sending Service key expires on %s!"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:132 views/settings.html:205
+#: lib/API/JSON/v1/Services.php:134 views/settings.html:205
 msgid "Your key is not valid for the MailPoet Sending Service"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:135
+#: lib/API/JSON/v1/Services.php:137
 msgid "Your MailPoet Sending Service key is already used on another site"
 msgstr ""
 
 #. translators: %s is the error message.
 
-#: lib/API/JSON/v1/Services.php:140
+#: lib/API/JSON/v1/Services.php:142
 msgid "Error validating MailPoet Sending Service key, please try again later (%s)."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:143
+#: lib/API/JSON/v1/Services.php:145
 msgid "Note that it doesn't work on localhost."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:177
+#: lib/API/JSON/v1/Services.php:179
 msgid "Your Premium key has been successfully validated"
 msgstr ""
 
 #. translators: %s is the expiration date.
 
-#: lib/API/JSON/v1/Services.php:181
+#: lib/API/JSON/v1/Services.php:185
 msgid "Your Premium key expires on %s"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:199 views/settings.html:201
+#: lib/API/JSON/v1/Services.php:203 views/settings.html:201
 msgid "Your key is not valid for MailPoet Premium"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:202
+#: lib/API/JSON/v1/Services.php:206
 msgid "Your Premium key is already used on another site"
 msgstr ""
 
 #. translators: %s is the error message.
 
-#: lib/API/JSON/v1/Services.php:208
+#: lib/API/JSON/v1/Services.php:212
 msgid "Error validating Premium key, please try again later (%s)"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:239 views/settings.html:203
+#: lib/API/JSON/v1/Services.php:243 views/settings.html:203
 msgid "MailPoet Sending Service is not active."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:244
+#: lib/API/JSON/v1/Services.php:248
 msgid "Sender email address is not set."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:255
+#: lib/API/JSON/v1/Services.php:259
 msgid "No FROM email addresses are authorized."
 msgstr ""
 
 #. translators: %s is the email address, which is not authorized.
 
-#: lib/API/JSON/v1/Services.php:260
+#: lib/API/JSON/v1/Services.php:264
 msgid "Sender email address '%s' is not authorized."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:269
+#: lib/API/JSON/v1/Services.php:273
 msgid "Sending of congratulatory email failed."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:284
+#: lib/API/JSON/v1/Services.php:288
 msgid "Service unavailable"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:287
+#: lib/API/JSON/v1/Services.php:291
 msgid "Contact your hosting support to check the connection between your host and https://bridge.mailpoet.com"
 msgstr ""
 
 #. translators: %s is the code.
 
-#: lib/API/JSON/v1/Services.php:291
+#: lib/API/JSON/v1/Services.php:295
 msgctxt "Error code (inside parentheses)"
 msgid "code: %s"
 msgstr ""
@@ -437,7 +441,7 @@ msgstr ""
 #: lib/API/JSON/v1/SubscriberStats.php:38 lib/API/JSON/v1/Subscribers.php:89
 #: lib/API/JSON/v1/Subscribers.php:183 lib/API/JSON/v1/Subscribers.php:199
 #: lib/API/JSON/v1/Subscribers.php:211 lib/API/JSON/v1/Subscribers.php:241
-#: lib/API/MP/v1/Subscribers.php:300
+#: lib/API/MP/v1/Subscribers.php:351
 msgid "This subscriber does not exist."
 msgstr ""
 
@@ -500,95 +504,95 @@ msgstr ""
 #. translators: %s is the error message
 #. translators: %s is an error message.
 
-#: lib/API/MP/v1/Segments.php:49 lib/API/MP/v1/Subscribers.php:134
+#: lib/API/MP/v1/Segments.php:49 lib/API/MP/v1/Subscribers.php:142
 msgid "Failed to add subscriber: %s"
 msgstr ""
 
-#: lib/API/MP/v1/Subscribers.php:104
+#: lib/API/MP/v1/Subscribers.php:112
 msgid "Subscriber email address is required."
 msgstr ""
 
-#: lib/API/MP/v1/Subscribers.php:112
+#: lib/API/MP/v1/Subscribers.php:120
 msgid "This subscriber already exists."
 msgstr ""
 
 #. translators: %s is an error message
 
-#: lib/API/MP/v1/Subscribers.php:144
+#: lib/API/MP/v1/Subscribers.php:152
 msgid "Failed to save subscriber custom fields: %s"
 msgstr ""
 
 #. translators: %s is the error message
 
-#: lib/API/MP/v1/Subscribers.php:191
+#: lib/API/MP/v1/Subscribers.php:199
 msgid "Failed to save a status of a subscriber : %s"
 msgstr ""
 
 #. translators: %s is a comma-separated list of errors
 
-#: lib/API/MP/v1/Subscribers.php:252
+#: lib/API/MP/v1/Subscribers.php:303
 msgid "Subscriber added, but welcome email failed to send: %s"
 msgstr ""
 
 #. translators: %s is the error message
 
-#: lib/API/MP/v1/Subscribers.php:269
+#: lib/API/MP/v1/Subscribers.php:320
 msgid "Subscriber added to lists, but confirmation email failed to send: %s"
 msgstr ""
 
-#: lib/API/MP/v1/Subscribers.php:280
+#: lib/API/MP/v1/Subscribers.php:331
 msgid "At least one segment ID is required."
 msgstr ""
 
-#: lib/API/MP/v1/Subscribers.php:283
+#: lib/API/MP/v1/Subscribers.php:334
 msgid "A subscriber is required."
 msgstr ""
 
 #. translators: %d is the ID of the segment
 
-#: lib/API/MP/v1/Subscribers.php:324
+#: lib/API/MP/v1/Subscribers.php:375
 msgid "Can't subscribe to a WordPress Users list with ID %d."
 msgstr ""
 
 #. translators: %d is the ID of the segment
 
-#: lib/API/MP/v1/Subscribers.php:327
+#: lib/API/MP/v1/Subscribers.php:378
 msgid "Can't unsubscribe from a WordPress Users list with ID %d."
 msgstr ""
 
 #. translators: %d is the ID of the segment
 
-#: lib/API/MP/v1/Subscribers.php:334
+#: lib/API/MP/v1/Subscribers.php:385
 msgid "Can't subscribe to a WooCommerce Customers list with ID %d."
 msgstr ""
 
 #. translators: %d is the ID of the segment
 
-#: lib/API/MP/v1/Subscribers.php:337
+#: lib/API/MP/v1/Subscribers.php:388
 msgid "Can't unsubscribe from a WooCommerce Customers list with ID %d."
 msgstr ""
 
 #. translators: %d is the ID of the segment
 
-#: lib/API/MP/v1/Subscribers.php:344
+#: lib/API/MP/v1/Subscribers.php:395
 msgid "Can't subscribe to a list with ID %d."
 msgstr ""
 
 #. translators: %d is the ID of the segment
 
-#: lib/API/MP/v1/Subscribers.php:347
+#: lib/API/MP/v1/Subscribers.php:398
 msgid "Can't unsubscribe from a list with ID %d."
 msgstr ""
 
 #. translators: %s is the count of lists
 
-#: lib/API/MP/v1/Subscribers.php:359
+#: lib/API/MP/v1/Subscribers.php:410
 msgid "List with ID %s does not exist."
 msgid_plural "Lists with IDs %s do not exist."
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/AdminPages/Pages/AutomationEditor.php:53
+#: lib/AdminPages/Pages/AutomationEditor.php:59
 msgid "Workflow not found."
 msgstr ""
 
@@ -743,135 +747,157 @@ msgstr ""
 msgid "Please contact our technical support for assistance."
 msgstr ""
 
+#. translators: %s is the original workflow name.
+#. translators: %s is name of the form which has been duplicated.
+#. translators: %s is the subject of the mail which has been copied.
+#. translators: %s is the name of the segment
+
+#: lib/Automation/Engine/Builder/DuplicateWorkflowController.php:52
+#: lib/Form/FormSaveController.php:28
+#: lib/Newsletter/NewsletterSaveController.php:175
+#: lib/Segments/SegmentSaveController.php:46
+msgid "Copy of %s"
+msgstr ""
+
 #. translators: %s is the status.
 
 #: lib/Automation/Engine/Builder/UpdateWorkflowController.php:77
 msgid "Invalid status: %s"
 msgstr ""
 
-#: lib/Automation/Engine/Control/RootStep.php:14
+#: lib/Automation/Engine/Control/RootStep.php:15
 msgid "Root step"
 msgstr ""
 
 #. translators: %s is the error message.
 
-#: lib/Automation/Engine/Exceptions.php:43
+#: lib/Automation/Engine/Exceptions.php:44
 msgid "Migration failed: %s"
 msgstr ""
 
 #. translators: %s is the error message.
 
-#: lib/Automation/Engine/Exceptions.php:50
+#: lib/Automation/Engine/Exceptions.php:51
 msgid "Database error: %s"
-msgstr ""
-
-#: lib/Automation/Engine/Exceptions.php:57
-msgid "Method not allowed."
-msgstr ""
-
-#: lib/Automation/Engine/Exceptions.php:63
-msgid "No JSON body passed."
 msgstr ""
 
 #. translators: %s is the mentioned JSON string.
 
-#: lib/Automation/Engine/Exceptions.php:70
+#: lib/Automation/Engine/Exceptions.php:58
 msgid "JSON string '%s' doesn't encode an object."
 msgstr ""
 
 #. translators: %d is the ID of the workflow.
 
-#: lib/Automation/Engine/Exceptions.php:77
+#: lib/Automation/Engine/Exceptions.php:65
 msgid "Workflow with ID '%d' not found."
 msgstr ""
 
 #. translators: %1$s is the ID of the workflow, %2$s the version.
 
-#: lib/Automation/Engine/Exceptions.php:84
+#: lib/Automation/Engine/Exceptions.php:72
 msgid "Workflow with ID \"%1$s\" in version \"%2$s\" not found."
 msgstr ""
 
 #. translators: %d is the ID of the workflow run.
 
-#: lib/Automation/Engine/Exceptions.php:91
+#: lib/Automation/Engine/Exceptions.php:79
 msgid "Workflow run with ID '%d' not found."
 msgstr ""
 
 #. translators: %s is the key of the workflow step.
 
-#: lib/Automation/Engine/Exceptions.php:98
+#: lib/Automation/Engine/Exceptions.php:86
 msgid "Workflow step with key '%s' not found."
 msgstr ""
 
 #. translators: %1$s is the key, %2$d is the workflow ID.
 
-#: lib/Automation/Engine/Exceptions.php:105
+#: lib/Automation/Engine/Exceptions.php:93
 msgid "Workflow trigger with key \"%1$s\" not found in workflow ID \"%2$d\"."
 msgstr ""
 
 #. translators: %1$d is the ID of the workflow run, %2$s its current status.
 
-#: lib/Automation/Engine/Exceptions.php:112
+#: lib/Automation/Engine/Exceptions.php:100
 msgid "Workflow run with ID \"%1$d\" is not running. Status: %2$s"
 msgstr ""
 
 #. translators: %s is the key of the subject not found.
 
-#: lib/Automation/Engine/Exceptions.php:119
+#: lib/Automation/Engine/Exceptions.php:107
 msgid "Subject with key '%s' not found."
 msgstr ""
 
 #. translators: %s is the class name of the subject not found.
 
-#: lib/Automation/Engine/Exceptions.php:126
+#: lib/Automation/Engine/Exceptions.php:114
 msgid "Subject of class '%s' not found."
 msgstr ""
 
 #. translators: %1$s is the name of the key, %2$s the arguments.
 
-#: lib/Automation/Engine/Exceptions.php:133
+#: lib/Automation/Engine/Exceptions.php:121
 msgid "Subject with key \"%1$s\" and args \"%2$s\" failed to load."
 msgstr ""
 
 #. translators: %1$s is the key of the subject, %2$d is workflow run ID.
 
-#: lib/Automation/Engine/Exceptions.php:141
+#: lib/Automation/Engine/Exceptions.php:129
 msgid "Subject data for subject with key '%1$s' not found for workflow run with ID '%2$d'."
 msgstr ""
 
 #. translators: %1$s is the key of the subject, %2$d is workflow run ID.
 
-#: lib/Automation/Engine/Exceptions.php:150
+#: lib/Automation/Engine/Exceptions.php:138
 msgid "Multiple subjects with key '%1$s' found for workflow run with ID '%2$d', only one expected."
 msgstr ""
 
 #. translators: %1$s is the class of the payload, %2$d is workflow run ID.
 
-#: lib/Automation/Engine/Exceptions.php:159
+#: lib/Automation/Engine/Exceptions.php:147
 msgid "Payload of class '%1$s' not found for workflow run with ID '%2$d'."
 msgstr ""
 
 #. translators: %1$s is the class of the payloads, %2$d is workflow run ID.
 
-#: lib/Automation/Engine/Exceptions.php:168
+#: lib/Automation/Engine/Exceptions.php:156
 msgid "Multiple payloads of class '%1$s' found for workflow run with ID '%2$d'."
 msgstr ""
 
-#: lib/Automation/Engine/Exceptions.php:175
+#: lib/Automation/Engine/Exceptions.php:163
 msgid "Workflow structure modification not supported."
 msgstr ""
 
 #. translators: %s is a detailed information
 
-#: lib/Automation/Engine/Exceptions.php:182
+#: lib/Automation/Engine/Exceptions.php:170
 msgid "Invalid workflow structure: %s"
 msgstr ""
 
 #. translators: %1$s is the key of the step, %2$s is the type of the step,
 #. %3\$s is its ID.
 
-#: lib/Automation/Engine/Exceptions.php:191
+#: lib/Automation/Engine/Exceptions.php:180
 msgid "Modification of step '%1$s' of type '%2$s' with ID '%3$s' is not supported when the related plugin is not active."
+msgstr ""
+
+#. translators: %s is a detailed information
+
+#: lib/Automation/Engine/Exceptions.php:192
+msgid "Workflow validation failed: %s"
+msgstr ""
+
+#. translators: %1$s is the key of the step, %2$s are the missing subject keys.
+
+#: lib/Automation/Engine/Exceptions.php:202
+msgid "Step with ID '%1$s' is missing required subjects with keys: %2$s"
+msgstr ""
+
+#. translators: %d is the ID of the workflow.
+
+#: lib/Automation/Engine/Exceptions.php:213
+msgid "Can't delete workflow with ID '%d' because it was not trashed."
 msgstr ""
 
 #: lib/Automation/Engine/Storage/WorkflowTemplateStorage.php:61
@@ -892,47 +918,70 @@ msgstr ""
 #. translators: %1$s is the ID of the step, %2$s is its index in the steps
 #. object.
 
-#: lib/Automation/Engine/Validation/WorkflowRules/ConsistentStepMapRule.php:16
+#: lib/Automation/Engine/Validation/WorkflowRules/ConsistentStepMapRule.php:18
 msgid "Step with ID '%1$s' stored under a mismatched index '%2$s'."
 msgstr ""
 
-#: lib/Automation/Engine/Validation/WorkflowRules/NoCycleRule.php:28
+#: lib/Automation/Engine/Validation/WorkflowRules/NoCycleRule.php:30
 msgid "Cycle found in workflow graph"
 msgstr ""
 
-#: lib/Automation/Engine/Validation/WorkflowRules/NoDuplicateEdgesRule.php:18
+#: lib/Automation/Engine/Validation/WorkflowRules/NoDuplicateEdgesRule.php:20
 msgid "Duplicate next step definition found"
 msgstr ""
 
-#: lib/Automation/Engine/Validation/WorkflowRules/NoJoinRule.php:25
+#: lib/Automation/Engine/Validation/WorkflowRules/NoJoinRule.php:27
 msgid "Path join found in workflow graph"
 msgstr ""
 
-#: lib/Automation/Engine/Validation/WorkflowRules/NoSplitRule.php:17
+#: lib/Automation/Engine/Validation/WorkflowRules/NoSplitRule.php:19
 msgid "Path split found in workflow graph"
 msgstr ""
 
-#: lib/Automation/Engine/Validation/WorkflowRules/NoUnreachableStepsRule.php:24
+#: lib/Automation/Engine/Validation/WorkflowRules/NoUnreachableStepsRule.php:26
 msgid "Unreachable steps found in workflow graph"
 msgstr ""
 
-#: lib/Automation/Engine/Validation/WorkflowRules/TriggersUnderRootRule.php:33
+#: lib/Automation/Engine/Validation/WorkflowRules/TriggersUnderRootRule.php:35
 msgid "Trigger must be a direct descendant of workflow root"
 msgstr ""
 
-#: lib/Automation/Integrations/Core/Actions/DelayAction.php:29
+#: lib/Automation/Engine/Validation/WorkflowRules/ValidStepRule.php:50
+msgid "Unknown error."
+msgstr ""
+
+#: lib/Automation/Engine/Validation/WorkflowRules/ValidStepRule.php:66
+msgid "Some steps are not valid"
+msgstr ""
+
+#: lib/Automation/Integrations/Core/Actions/DelayAction.php:30
 msgid "Delay"
 msgstr ""
 
-#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:61
-#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:73
+#: lib/Automation/Integrations/Core/Actions/DelayAction.php:47
+msgid "A delay must have a positive value"
+msgstr ""
+
+#: lib/Automation/Integrations/Core/Actions/DelayAction.php:50
+msgid "A delay can't be longer than two years"
+msgstr ""
+
+#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:59
+#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:69
 msgid "Send email"
 msgstr ""
 
-#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:66
+#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:70
 #: views/newsletters.html:131 views/newsletters.html:199
 #: views/newsletters.html:268
 msgid "Subject"
+msgstr ""
+
+#. translators: %s is the ID of email.
+
+#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:94
+#: lib/Automation/Integrations/MailPoet/Actions/SendEmailAction.php:167
+msgid "Automation email with ID '%s' not found."
 msgstr ""
 
 #: lib/Automation/Integrations/MailPoet/Subjects/SegmentSubject.php:35
@@ -976,7 +1025,7 @@ msgid "Subscriber status"
 msgstr ""
 
 #: lib/Automation/Integrations/MailPoet/Subjects/SubscriberSubject.php:82
-#: lib/Subscribers/SubscriberListingRepository.php:205
+#: lib/Subscribers/SubscriberListingRepository.php:211
 #: lib/Subscription/ManageSubscriptionFormRenderer.php:186
 #: views/segments.html:53 views/subscribers/importExport/import.html:129
 #: views/subscribers/subscribers.html:70
@@ -984,13 +1033,13 @@ msgid "Subscribed"
 msgstr ""
 
 #: lib/Automation/Integrations/MailPoet/Subjects/SubscriberSubject.php:83
-#: lib/Subscribers/SubscriberListingRepository.php:210 views/segments.html:54
+#: lib/Subscribers/SubscriberListingRepository.php:216 views/segments.html:54
 #: views/subscribers/subscribers.html:69
 msgid "Unconfirmed"
 msgstr ""
 
 #: lib/Automation/Integrations/MailPoet/Subjects/SubscriberSubject.php:84
-#: lib/Subscribers/SubscriberListingRepository.php:215
+#: lib/Subscribers/SubscriberListingRepository.php:221
 #: lib/Subscription/ManageSubscriptionFormRenderer.php:194
 #: views/segments.html:55 views/subscribers/importExport/import.html:130
 #: views/subscribers/subscribers.html:71
@@ -998,7 +1047,7 @@ msgid "Unsubscribed"
 msgstr ""
 
 #: lib/Automation/Integrations/MailPoet/Subjects/SubscriberSubject.php:85
-#: lib/Subscribers/SubscriberListingRepository.php:220
+#: lib/Subscribers/SubscriberListingRepository.php:226
 #: lib/Subscription/ManageSubscriptionFormRenderer.php:214
 #: views/segments.html:56 views/subscribers/importExport/import.html:131
 #: views/subscribers/subscribers.html:72
@@ -1006,17 +1055,17 @@ msgid "Inactive"
 msgstr ""
 
 #: lib/Automation/Integrations/MailPoet/Subjects/SubscriberSubject.php:86
-#: lib/Subscribers/SubscriberListingRepository.php:225
+#: lib/Subscribers/SubscriberListingRepository.php:231
 #: lib/Subscription/ManageSubscriptionFormRenderer.php:202
 #: views/segments.html:57 views/subscribers/subscribers.html:73
 msgid "Bounced"
 msgstr ""
 
-#: lib/Automation/Integrations/MailPoet/Triggers/SomeoneSubscribesTrigger.php:34
+#: lib/Automation/Integrations/MailPoet/Triggers/SomeoneSubscribesTrigger.php:35
 msgid "Someone subscribes"
 msgstr ""
 
-#: lib/Automation/Integrations/MailPoet/Triggers/UserRegistrationTrigger.php:43
+#: lib/Automation/Integrations/MailPoet/Triggers/UserRegistrationTrigger.php:44
 msgid "Subscribed to segment"
 msgstr ""
 
@@ -1052,7 +1101,7 @@ msgstr ""
 msgid "Manage automations"
 msgstr ""
 
-#: lib/Config/Activator.php:47
+#: lib/Config/Activator.php:54
 msgid "MailPoet version update is in progress, please refresh the page in a minute."
 msgstr ""
 
@@ -2755,28 +2804,18 @@ msgstr ""
 msgid "You’ve been successfully subscribed to our newsletter!"
 msgstr ""
 
-#. translators: %s is name of the form which has been duplicated.
-#. translators: %s is the subject of the mail which has been copied.
-#. translators: %s is the name of the segment
-
-#: lib/Form/FormSaveController.php:28
-#: lib/Newsletter/NewsletterSaveController.php:175
-#: lib/Segments/SegmentSaveController.php:46
-msgid "Copy of %s"
-msgstr ""
-
 #: lib/Form/Listing/FormListingRepository.php:31
 #: lib/Newsletter/Listing/NewsletterListingRepository.php:106
 #: lib/Newsletter/Sending/ScheduledTaskSubscribersListingRepository.php:48
 #: lib/Segments/SegmentListingRepository.php:94
-#: lib/Subscribers/SubscriberListingRepository.php:200
+#: lib/Subscribers/SubscriberListingRepository.php:206
 msgid "All"
 msgstr ""
 
 #: lib/Form/Listing/FormListingRepository.php:36
 #: lib/Newsletter/Listing/NewsletterListingRepository.php:174
 #: lib/Segments/SegmentListingRepository.php:99
-#: lib/Subscribers/SubscriberListingRepository.php:230 views/forms.html:92
+#: lib/Subscribers/SubscriberListingRepository.php:236 views/forms.html:92
 #: views/newsletters.html:148 views/segments.html:76
 #: views/subscribers/subscribers.html:45
 msgid "Trash"
@@ -3528,11 +3567,11 @@ msgstr ""
 msgid "Sending has been paused."
 msgstr ""
 
-#: lib/Mailer/MailerLog.php:98
+#: lib/Mailer/MailerLog.php:97
 msgid "Sending is waiting to be retried."
 msgstr ""
 
-#: lib/Mailer/MailerLog.php:106
+#: lib/Mailer/MailerLog.php:105
 msgid "Sending frequency limit has been reached."
 msgstr ""
 
@@ -3647,7 +3686,7 @@ msgstr ""
 
 #: lib/Models/Subscriber.php:163
 #: lib/Newsletter/Listing/NewsletterListingRepository.php:62
-#: lib/Subscribers/SubscriberListingRepository.php:269
+#: lib/Subscribers/SubscriberListingRepository.php:275
 msgid "All Lists"
 msgstr ""
 
@@ -3655,7 +3694,7 @@ msgstr ""
 #. translators: %s is the number of subscribers without a list.
 
 #: lib/Models/Subscriber.php:172
-#: lib/Subscribers/SubscriberListingRepository.php:255
+#: lib/Subscribers/SubscriberListingRepository.php:261
 msgid "Subscribers without a list (%s)"
 msgstr ""
 
@@ -4174,7 +4213,7 @@ msgstr ""
 msgid "Missing value for custom field \"%s\""
 msgstr ""
 
-#: lib/Subscribers/SubscriberListingRepository.php:312
+#: lib/Subscribers/SubscriberListingRepository.php:318
 msgid "All Tags"
 msgstr ""
 
@@ -11267,4 +11306,7 @@ msgstr ""
 #: views/woocommerce_setup_translations.html:10
 msgctxt "Submit button caption on the standalone WooCommerce setup page"
 msgid "Start using WooCommerce features"
+msgstr ""
+#. Description of the plugin/theme
+msgid "Create and send newsletters, post notifications and welcome emails from your WordPress."
 msgstr ""

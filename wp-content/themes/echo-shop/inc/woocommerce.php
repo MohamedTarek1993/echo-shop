@@ -314,6 +314,63 @@ function echo_woocmmerce_modfied()
 }
 add_action('wp', 'echo_woocmmerce_modfied');
 
+/**
+ * my account page .
+ *
+ * .
+ *
+ * @return void
+ */
+
+//add row
+
+add_action('woocommerce_account_navigation', 'echo_woocommerce_open_row_myaccount', 8);
+
+function echo_woocommerce_open_row_myaccount()
+{
+	echo '<div class="row">';
+}
+
+
+//add column to account navigation
+add_action('woocommerce_account_navigation', 'echo_woocommerce_open_section_myaccount', 9);
+
+function echo_woocommerce_open_section_myaccount()
+{
+	echo '<div class="col-xl-3 col-lg-3 col-md-4 col-12">';
+}
+
+add_action('woocommerce_account_navigation', 'echo_woocommerce_close_section_myaccount', 10);
+
+function echo_woocommerce_close_section_myaccount()
+{
+	echo '</div>';
+}
+
+
+//add column to account content
+add_action('woocommerce_account_navigation', 'echo_woocommerce_open_section_myaccount_content', 11);
+
+function echo_woocommerce_open_section_myaccount_content()
+{
+	echo '<div class="col-xl-9 col-lg-8 col-md-8 col-12 woocommerce-myaccount-content">';
+}
+
+add_action('woocommerce_account_content', 'echo_woocommerce_close_section_myaccount_content', 8);
+
+function echo_woocommerce_close_section_myaccount_content()
+{
+	echo '</div> ';
+}
+
+
+//finish row
+add_action('woocommerce_account_content', 'echo_woocommerce_close_row_myaccount', 11);
+
+function echo_woocommerce_close_row_myaccount()
+{
+	echo '</div>';
+}
 
 /**
  * not found page .

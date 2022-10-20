@@ -163,7 +163,7 @@ class PurchasedInCategory {
       WooCommerce::SLUG,
       self::SLUG,
       $schedulingCondition,
-      $subscriber->getId(),
+      $subscriber,
       ['orderedProductCategories' => $orderedProductCategories],
       [$this, 'metaModifier']
     );

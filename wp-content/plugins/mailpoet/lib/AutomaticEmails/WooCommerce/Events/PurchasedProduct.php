@@ -165,7 +165,7 @@ class PurchasedProduct {
       WooCommerce::SLUG,
       self::SLUG,
       $schedulingCondition,
-      $subscriber->getId(),
+      $subscriber,
       ['orderedProducts' => $orderedProducts],
       [$this, 'metaModifier']
     );
