@@ -1,0 +1,62 @@
+2022-10-19T08:21:01+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\echo-shop/wp-content/themes/echo-shop/class-wp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php:247
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): register_navwalker('')
+#1 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\echo-shop\wp-settings.php(576): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php on line 247
+
+2022-10-19T08:22:12+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\echo-shop/wp-content/themes/echo-shop/class-wp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php:247
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): register_navwalker('')
+#1 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\echo-shop\wp-settings.php(576): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php on line 247
+
+2022-10-19T08:24:12+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\echo-shop/wp-content/themes/echo-shop/class-wp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php:250
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): register_navwalker('')
+#1 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\echo-shop\wp-settings.php(576): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php on line 250
+
+2022-10-19T08:24:19+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\echo-shop/wp-content/themes/echo-shop/class-wp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php:250
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): register_navwalker('')
+#1 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\echo-shop\wp-settings.php(576): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\echo-shop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\echo-shop\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php on line 250
+
+2022-10-19T08:24:58+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\echo-shop/wp-content/themes/echo-shopinc/class-wp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php:250
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): register_navwalker('')
+#1 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\echo-shop\wp-settings.php(576): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\echo-shop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\echo-shop\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\functions.php on line 250
+

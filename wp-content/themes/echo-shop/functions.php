@@ -60,7 +60,11 @@ function echo_shop_setup()
 		wp_nav_menu(array(
 			'theme_location'  => $location,
 			'menu_class'   =>  $class,
-			'container' =>  '',
+			'depth'           => 3, // 1 = no dropdowns, 2 = with dropdowns.
+			'container'       => '',
+			'menu_class'      => 'navbar-nav',
+			'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+			'walker'          => new WP_Bootstrap_Navwalker(),
 
 
 		));
@@ -112,6 +116,15 @@ function echo_shop_setup()
 			'flex-height' => true,
 		)
 	);
+
+
+	/**
+	 * Register Custom Navigation Walker
+	 */
+
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+
+	
 }
 add_action('after_setup_theme', 'echo_shop_setup');
 
@@ -237,4 +250,3 @@ function hide_uncategorized_cat_from_widget($args)
 
 //hide category product count in product archives
 add_filter('woocommerce_subcategory_count_html', '__return_false');
-
