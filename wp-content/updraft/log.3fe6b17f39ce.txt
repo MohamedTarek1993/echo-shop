@@ -1,0 +1,786 @@
+0000.001 (0) Opened log file at time: Wed, 19 Oct 2022 21:02:13 +0000 on http://localhost/echo-shop
+0000.007 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.23 WP: 6.0.3 PHP: 8.1.10 (apache2handler, Windows NT DESKTOP-RCJILUU 10.0 build 19044 (Windows 10) AMD64) MySQL: 10.4.25-MariaDB (max packet size=1048576) WPLANG: en_US Server: Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 72.7M | 74M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.010 (0) Free space on disk containing Updraft's temporary directory: 139070.7 MB
+0000.016 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.019 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.041 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1666118739, seconds_ago=94594)
+0000.052 (0) Set semaphore last lock (fd) time to 2022-10-19 21:02:13
+0000.054 (0) Semaphore lock (fd) complete
+0000.062 (0) Backup run: resumption=0, nonce=3fe6b17f39ce, file_nonce=3fe6b17f39ce begun at=1666213333 (0s ago), job type=backup
+0000.067 (0) Scheduling a resumption (1) after 300 seconds (1666213633) in case this run gets aborted
+0000.125 (0) Checking if we have a zip executable available
+0000.132 (0) Creation of backups of directories: beginning
+0000.143 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0017.424 (0) Total entities for the zip file: 3101 directories, 17204 files (0 skipped as non-modified), 154.2 MB
+0017.440 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0017.699 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 100 files added (on-disk size: 645.3 KB)
+0017.762 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 200 files added (on-disk size: 645.3 KB)
+0017.823 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 300 files added (on-disk size: 645.3 KB)
+0017.886 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 400 files added (on-disk size: 645.3 KB)
+0017.950 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 500 files added (on-disk size: 645.3 KB)
+0018.017 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 600 files added (on-disk size: 645.3 KB)
+0018.084 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 700 files added (on-disk size: 645.3 KB)
+0018.158 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 800 files added (on-disk size: 645.3 KB)
+0018.228 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 900 files added (on-disk size: 645.3 KB)
+0018.303 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1000 files added (on-disk size: 645.3 KB)
+0018.386 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (19.9 MB, 17204 files batched, 1001 (1002) added so far); re-opening (prior size: 645.3 KB)
+0030.182 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1100 files added (on-disk size: 5337.2 KB)
+0030.247 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1200 files added (on-disk size: 5337.2 KB)
+0030.306 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1300 files added (on-disk size: 5337.2 KB)
+0030.372 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1400 files added (on-disk size: 5337.2 KB)
+0030.431 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1500 files added (on-disk size: 5337.2 KB)
+0030.491 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1600 files added (on-disk size: 5337.2 KB)
+0030.552 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1700 files added (on-disk size: 5337.2 KB)
+0030.614 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1800 files added (on-disk size: 5337.2 KB)
+0030.674 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 1900 files added (on-disk size: 5337.2 KB)
+0030.735 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2000 files added (on-disk size: 5337.2 KB)
+0030.740 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.8 MB, 17204 files batched, 1001 (2003) added so far); re-opening (prior size: 5337.2 KB)
+0040.933 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2100 files added (on-disk size: 7299.5 KB)
+0041.000 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2200 files added (on-disk size: 7299.5 KB)
+0041.067 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2300 files added (on-disk size: 7299.5 KB)
+0041.134 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2400 files added (on-disk size: 7299.5 KB)
+0041.208 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2500 files added (on-disk size: 7299.5 KB)
+0041.284 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2600 files added (on-disk size: 7299.5 KB)
+0041.362 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2700 files added (on-disk size: 7299.5 KB)
+0041.441 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2800 files added (on-disk size: 7299.5 KB)
+0041.523 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 2900 files added (on-disk size: 7299.5 KB)
+0041.591 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3000 files added (on-disk size: 7299.5 KB)
+0041.598 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.9 MB, 17204 files batched, 1001 (3004) added so far); re-opening (prior size: 7299.5 KB)
+0055.737 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3100 files added (on-disk size: 8828.5 KB)
+0055.806 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3200 files added (on-disk size: 8828.5 KB)
+0055.876 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3300 files added (on-disk size: 8828.5 KB)
+0055.947 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3400 files added (on-disk size: 8828.5 KB)
+0056.019 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3500 files added (on-disk size: 8828.5 KB)
+0056.092 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3600 files added (on-disk size: 8828.5 KB)
+0056.177 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3700 files added (on-disk size: 8828.5 KB)
+0056.252 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3800 files added (on-disk size: 8828.5 KB)
+0056.323 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 3900 files added (on-disk size: 8828.5 KB)
+0056.393 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4000 files added (on-disk size: 8828.5 KB)
+0056.400 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.2 MB, 17204 files batched, 1001 (4005) added so far); re-opening (prior size: 8828.5 KB)
+0070.150 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4100 files added (on-disk size: 10026.7 KB)
+0070.218 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4200 files added (on-disk size: 10026.7 KB)
+0070.288 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4300 files added (on-disk size: 10026.7 KB)
+0070.360 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4400 files added (on-disk size: 10026.7 KB)
+0070.431 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4500 files added (on-disk size: 10026.7 KB)
+0070.498 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4600 files added (on-disk size: 10026.7 KB)
+0070.568 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4700 files added (on-disk size: 10026.7 KB)
+0070.645 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4800 files added (on-disk size: 10026.7 KB)
+0070.737 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 4900 files added (on-disk size: 10026.7 KB)
+0070.828 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5000 files added (on-disk size: 10026.7 KB)
+0070.836 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.9 MB, 17204 files batched, 1001 (5006) added so far); re-opening (prior size: 10026.7 KB)
+0085.568 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5100 files added (on-disk size: 11612.5 KB)
+0085.629 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5200 files added (on-disk size: 11612.5 KB)
+0085.690 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5300 files added (on-disk size: 11612.5 KB)
+0085.750 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5400 files added (on-disk size: 11612.5 KB)
+0085.809 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5500 files added (on-disk size: 11612.5 KB)
+0085.870 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5600 files added (on-disk size: 11612.5 KB)
+0085.929 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5700 files added (on-disk size: 11612.5 KB)
+0085.988 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5800 files added (on-disk size: 11612.5 KB)
+0086.050 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 5900 files added (on-disk size: 11612.5 KB)
+0086.114 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6000 files added (on-disk size: 11612.5 KB)
+0086.122 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (11.4 MB, 17204 files batched, 1001 (6007) added so far); re-opening (prior size: 11612.5 KB)
+0097.285 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6100 files added (on-disk size: 19266 KB)
+0097.348 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6200 files added (on-disk size: 19266 KB)
+0097.410 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6300 files added (on-disk size: 19266 KB)
+0097.475 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6400 files added (on-disk size: 19266 KB)
+0097.542 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6500 files added (on-disk size: 19266 KB)
+0097.608 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6600 files added (on-disk size: 19266 KB)
+0097.672 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6700 files added (on-disk size: 19266 KB)
+0097.740 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6800 files added (on-disk size: 19266 KB)
+0097.807 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 6900 files added (on-disk size: 19266 KB)
+0097.875 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7000 files added (on-disk size: 19266 KB)
+0097.885 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (9.8 MB, 17204 files batched, 1001 (7008) added so far); re-opening (prior size: 19266 KB)
+0112.069 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7100 files added (on-disk size: 23956.3 KB)
+0112.145 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7200 files added (on-disk size: 23956.3 KB)
+0112.213 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7300 files added (on-disk size: 23956.3 KB)
+0112.274 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7400 files added (on-disk size: 23956.3 KB)
+0112.335 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7500 files added (on-disk size: 23956.3 KB)
+0112.397 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7600 files added (on-disk size: 23956.3 KB)
+0112.456 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7700 files added (on-disk size: 23956.3 KB)
+0112.518 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7800 files added (on-disk size: 23956.3 KB)
+0112.580 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 7900 files added (on-disk size: 23956.3 KB)
+0112.640 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8000 files added (on-disk size: 23956.3 KB)
+0112.649 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (14.5 MB, 17204 files batched, 1001 (8009) added so far); re-opening (prior size: 23956.3 KB)
+0130.005 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8100 files added (on-disk size: 29096.5 KB)
+0130.075 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8200 files added (on-disk size: 29096.5 KB)
+0130.181 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8300 files added (on-disk size: 29096.5 KB)
+0130.310 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8400 files added (on-disk size: 29096.5 KB)
+0130.444 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8500 files added (on-disk size: 29096.5 KB)
+0130.577 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8600 files added (on-disk size: 29096.5 KB)
+0130.702 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8700 files added (on-disk size: 29096.5 KB)
+0130.855 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8800 files added (on-disk size: 29096.5 KB)
+0131.008 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 8900 files added (on-disk size: 29096.5 KB)
+0131.159 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9000 files added (on-disk size: 29096.5 KB)
+0131.176 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (14 MB, 17204 files batched, 1001 (9010) added so far); re-opening (prior size: 29096.5 KB)
+0143.428 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9100 files added (on-disk size: 32487.4 KB)
+0143.488 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9200 files added (on-disk size: 32487.4 KB)
+0143.547 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9300 files added (on-disk size: 32487.4 KB)
+0143.609 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9400 files added (on-disk size: 32487.4 KB)
+0143.668 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9500 files added (on-disk size: 32487.4 KB)
+0143.728 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9600 files added (on-disk size: 32487.4 KB)
+0143.788 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9700 files added (on-disk size: 32487.4 KB)
+0143.850 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9800 files added (on-disk size: 32487.4 KB)
+0143.912 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 9900 files added (on-disk size: 32487.4 KB)
+0143.972 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10000 files added (on-disk size: 32487.4 KB)
+0143.982 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (3.7 MB, 17204 files batched, 1001 (10011) added so far); re-opening (prior size: 32487.4 KB)
+0156.744 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10100 files added (on-disk size: 33626.7 KB)
+0156.809 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10200 files added (on-disk size: 33626.7 KB)
+0156.874 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10300 files added (on-disk size: 33626.7 KB)
+0156.939 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10400 files added (on-disk size: 33626.7 KB)
+0157.007 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10500 files added (on-disk size: 33626.7 KB)
+0157.082 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10600 files added (on-disk size: 33626.7 KB)
+0157.159 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10700 files added (on-disk size: 33626.7 KB)
+0157.235 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10800 files added (on-disk size: 33626.7 KB)
+0157.304 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 10900 files added (on-disk size: 33626.7 KB)
+0157.381 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11000 files added (on-disk size: 33626.7 KB)
+0157.390 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.2 MB, 17204 files batched, 1001 (11012) added so far); re-opening (prior size: 33626.7 KB)
+0171.000 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11100 files added (on-disk size: 35126.1 KB)
+0171.099 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11200 files added (on-disk size: 35126.1 KB)
+0171.206 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11300 files added (on-disk size: 35126.1 KB)
+0171.279 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11400 files added (on-disk size: 35126.1 KB)
+0171.348 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11500 files added (on-disk size: 35126.1 KB)
+0171.417 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11600 files added (on-disk size: 35126.1 KB)
+0171.487 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11700 files added (on-disk size: 35126.1 KB)
+0171.546 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11800 files added (on-disk size: 35126.1 KB)
+0171.606 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 11900 files added (on-disk size: 35126.1 KB)
+0171.665 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12000 files added (on-disk size: 35126.1 KB)
+0171.677 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (19.4 MB, 17204 files batched, 1001 (12013) added so far); re-opening (prior size: 35126.1 KB)
+0187.153 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12100 files added (on-disk size: 40723.3 KB)
+0187.214 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12200 files added (on-disk size: 40723.3 KB)
+0187.278 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12300 files added (on-disk size: 40723.3 KB)
+0187.338 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12400 files added (on-disk size: 40723.3 KB)
+0187.398 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12500 files added (on-disk size: 40723.3 KB)
+0187.458 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12600 files added (on-disk size: 40723.3 KB)
+0187.519 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12700 files added (on-disk size: 40723.3 KB)
+0187.581 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12800 files added (on-disk size: 40723.3 KB)
+0187.641 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 12900 files added (on-disk size: 40723.3 KB)
+0187.710 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13000 files added (on-disk size: 40723.3 KB)
+0187.723 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.6 MB, 17204 files batched, 1001 (13014) added so far); re-opening (prior size: 40723.3 KB)
+0204.496 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13100 files added (on-disk size: 42720.2 KB)
+0204.555 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13200 files added (on-disk size: 42720.2 KB)
+0204.615 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13300 files added (on-disk size: 42720.2 KB)
+0204.685 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13400 files added (on-disk size: 42720.2 KB)
+0204.749 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13500 files added (on-disk size: 42720.2 KB)
+0204.812 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13600 files added (on-disk size: 42720.2 KB)
+0204.880 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13700 files added (on-disk size: 42720.2 KB)
+0204.946 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13800 files added (on-disk size: 42720.2 KB)
+0205.014 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 13900 files added (on-disk size: 42720.2 KB)
+0205.086 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14000 files added (on-disk size: 42720.2 KB)
+0205.104 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (15.1 MB, 17204 files batched, 1001 (14015) added so far); re-opening (prior size: 42720.2 KB)
+0225.249 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14100 files added (on-disk size: 47330.7 KB)
+0225.309 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14200 files added (on-disk size: 47330.7 KB)
+0225.369 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14300 files added (on-disk size: 47330.7 KB)
+0225.430 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14400 files added (on-disk size: 47330.7 KB)
+0225.490 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14500 files added (on-disk size: 47330.7 KB)
+0225.554 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14600 files added (on-disk size: 47330.7 KB)
+0225.617 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14700 files added (on-disk size: 47330.7 KB)
+0225.678 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14800 files added (on-disk size: 47330.7 KB)
+0225.738 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 14900 files added (on-disk size: 47330.7 KB)
+0225.798 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15000 files added (on-disk size: 47330.7 KB)
+0225.810 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.3 MB, 17204 files batched, 1001 (15016) added so far); re-opening (prior size: 47330.7 KB)
+0235.572 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15100 files added (on-disk size: 48745.1 KB)
+0235.633 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15200 files added (on-disk size: 48745.1 KB)
+0235.699 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15300 files added (on-disk size: 48745.1 KB)
+0235.766 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15400 files added (on-disk size: 48745.1 KB)
+0235.831 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15500 files added (on-disk size: 48745.1 KB)
+0235.898 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15600 files added (on-disk size: 48745.1 KB)
+0235.964 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15700 files added (on-disk size: 48745.1 KB)
+0236.033 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15800 files added (on-disk size: 48745.1 KB)
+0236.108 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 15900 files added (on-disk size: 48745.1 KB)
+0236.182 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16000 files added (on-disk size: 48745.1 KB)
+0236.200 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.4 MB, 17204 files batched, 1001 (16017) added so far); re-opening (prior size: 48745.1 KB)
+0245.358 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16100 files added (on-disk size: 50898.5 KB)
+0245.418 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16200 files added (on-disk size: 50898.5 KB)
+0245.479 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16300 files added (on-disk size: 50898.5 KB)
+0245.537 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16400 files added (on-disk size: 50898.5 KB)
+0245.598 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16500 files added (on-disk size: 50898.5 KB)
+0245.658 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16600 files added (on-disk size: 50898.5 KB)
+0245.717 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16700 files added (on-disk size: 50898.5 KB)
+0245.776 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16800 files added (on-disk size: 50898.5 KB)
+0245.836 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 16900 files added (on-disk size: 50898.5 KB)
+0245.895 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 17000 files added (on-disk size: 50898.5 KB)
+0245.908 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.4 MB, 17204 files batched, 1001 (17018) added so far); re-opening (prior size: 50898.5 KB)
+0258.560 (0) The scheduled resumption is within 45 seconds - will reschedule
+0258.565 (0) Rescheduling resumption 1: moving to 345 seconds from now (1666213936)
+0258.572 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 45 = 345
+0258.826 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 17100 files added (on-disk size: 52284.7 KB)
+0258.896 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.tmp: 17200 files added (on-disk size: 52284.7 KB)
+0262.301 (0) Creating zip file manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.list-temp.tmp)
+0262.523 (0) Successfully created zip file manifest (size: 1753187)
+0263.154 (0) Created plugins zip (0) - 52493.7 KB in 263 s (199.6 KB/s) (sha1: e4acfce2087b373a956072f94db27d2365f70bab, sha256: 10196f6259f83537442ac06e13e58dbd35cdd04ecd106a88fd0004e0bfa52b99)
+0263.180 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0263.181 (0) No remote despatch: user chose no remote backup service
+0263.184 (0) Recording as successfully uploaded: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip
+0263.188 (0) Deleting zip manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip.list.tmp)
+0263.193 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=4, retain_db=4
+0263.195 (0) Number of backup sets in history: 1; groups (db): 1
+0263.198 (0) Examining (for databases) backup set with group_id=0, nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0263.199 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0263.202 (0) Number of backup sets in history: 1; groups (files): 1
+0263.204 (0) Examining (for files) backup set with nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0263.204 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0263.206 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0263.218 (0) Beginning creation of dump of themes (split every: 400 MB)
+0263.311 (0) Total entities for the zip file: 25 directories, 215 files (0 skipped as non-modified), 3.6 MB
+0263.378 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0263.443 (0) Zip: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0264.687 (0) Creating zip file manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-themes.zip.list-temp.tmp)
+0264.694 (0) Successfully created zip file manifest (size: 13633)
+0264.724 (0) Created themes zip (0) - 1272.2 KB in 1.5 s (850.4 KB/s) (sha1: 6115bc36669c743d8566497f55b7d86137b44b37, sha256: 75f09d1f17383582aec7cb1dd67a08f519c32926dd5d81b4d1a5f827e25d6295)
+0264.733 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0264.736 (0) No remote despatch: user chose no remote backup service
+0264.737 (0) Recording as successfully uploaded: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-themes.zip
+0264.741 (0) Deleting zip manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-themes.zip.list.tmp)
+0264.746 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=4, retain_db=4
+0264.749 (0) Number of backup sets in history: 1; groups (db): 1
+0264.751 (0) Examining (for databases) backup set with group_id=0, nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0264.751 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0264.753 (0) Number of backup sets in history: 1; groups (files): 1
+0264.755 (0) Examining (for files) backup set with nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0264.755 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0264.757 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0264.769 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0264.771 (0) Looking for candidates to backup in: C:\xampp\htdocs\echo-shop/wp-content/uploads
+0264.774 (0) finding files: 2022: adding to list (1)
+0264.776 (0) finding files: mailpoet: adding to list (2)
+0264.778 (0) finding files: wc-logs: adding to list (3)
+0264.781 (0) finding files: woocommerce-placeholder.png: adding to list (4)
+0264.782 (0) finding files: woocommerce_uploads: adding to list (5)
+0264.785 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0264.821 (0) Total entities for the zip file: 5 directories, 49 files (0 skipped as non-modified), 1.7 MB
+0265.016 (0) Creating zip file manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-uploads.zip.list-temp.tmp)
+0265.020 (0) Successfully created zip file manifest (size: 3077)
+0265.052 (0) Created uploads zip (0) - 1663.5 KB in 0.3 s (6375.4 KB/s) (sha1: a1367253f8808c50145f7b7d481faa6e04e9d517, sha256: 2beb2e67cad136975b6a8822cb97863c8a740fd0fd9ebd5fc8585244d5548431)
+0265.061 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0265.064 (0) No remote despatch: user chose no remote backup service
+0265.067 (0) Recording as successfully uploaded: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-uploads.zip
+0265.072 (0) Deleting zip manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-uploads.zip.list.tmp)
+0265.076 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=4, retain_db=4
+0265.078 (0) Number of backup sets in history: 1; groups (db): 1
+0265.081 (0) Examining (for databases) backup set with group_id=0, nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0265.081 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0265.082 (0) Number of backup sets in history: 1; groups (files): 1
+0265.085 (0) Examining (for files) backup set with nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0265.085 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0265.087 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0265.099 (0) Beginning backup of other directories found in the content directory (index: 0)
+0265.101 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0265.105 (0) Looking for candidates to backup in: C:\xampp\htdocs\echo-shop/wp-content
+0265.107 (0) finding files: index.php: adding to list (1)
+0265.110 (0) finding files: plugins: skipping: this is the plugins directory
+0265.113 (0) finding files: themes: skipping: this is the themes directory
+0265.114 (0) finding files: updraft: skipping: this is the updraft directory
+0265.117 (0) finding files: upgrade: skipping: excluded by options
+0265.119 (0) finding files: uploads: skipping: this is the uploads directory
+0265.137 (0) Total entities for the zip file: 0 directories, 1 files (0 skipped as non-modified), 0 MB
+0265.161 (0) Creating zip file manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-others.zip.list-temp.tmp)
+0265.164 (0) Successfully created zip file manifest (size: 43)
+0265.176 (0) Created others zip (0) - 0.1 KB in 0 s (3.3 KB/s) (sha1: d8f7591d0bfac552bf1bbbb825700c03b1d1fa7e, sha256: 2d6913a2b6d07a96ee5740697f0e7ac554ec914bf4408169c470efe1c7f2b394)
+0265.186 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0265.188 (0) No remote despatch: user chose no remote backup service
+0265.190 (0) Recording as successfully uploaded: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-others.zip
+0265.194 (0) Deleting zip manifest (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-others.zip.list.tmp)
+0265.199 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=4, retain_db=4
+0265.202 (0) Number of backup sets in history: 1; groups (db): 1
+0265.204 (0) Examining (for databases) backup set with group_id=0, nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0265.204 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0265.206 (0) Number of backup sets in history: 1; groups (files): 1
+0265.208 (0) Examining (for files) backup set with nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0265.208 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0265.209 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0265.226 (0) Saving backup status to database (elements: 8)
+0265.231 (0) Beginning creation of database dump (WordPress DB)
+0265.234 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0265.697 (0) Table ec_options: Total expected rows (via COUNT): 506
+0265.790 (0) Table ec_options: Rows added in this batch (next record: 4150): 502 (uncompressed bytes in this segment=1705598) in 0.13 seconds
+0265.807 (0) Table ec_options: finishing file(s) (2, 407.1 KB)
+0265.828 (0) Table ec_users: Total expected rows (via COUNT): 1
+0265.831 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0265.837 (0) Table ec_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1383) in 0.02 seconds
+0265.851 (0) Table ec_users: finishing file(s) (2, 0.6 KB)
+0265.869 (0) Table ec_usermeta: Total expected rows (via COUNT): 50
+0265.871 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0265.877 (0) Table ec_usermeta: Rows added in this batch (next record: 65): 50 (uncompressed bytes in this segment=5199) in 0.02 seconds
+0265.894 (0) Table ec_usermeta: finishing file(s) (2, 2.2 KB)
+0265.923 (0) Table ec_actionscheduler_actions: Total expected rows (via COUNT): 920
+0265.951 (0) Table ec_actionscheduler_actions: Rows added in this batch (next record: 941): 920 (uncompressed bytes in this segment=412839) in 0.05 seconds
+0265.969 (0) Table ec_actionscheduler_actions: finishing file(s) (2, 22.4 KB)
+0265.983 (0) Table ec_actionscheduler_claims: Total expected rows (via COUNT): 0
+0265.986 (0) Table ec_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=626) in 0.01 seconds
+0266.001 (0) Table ec_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0266.015 (0) Table ec_actionscheduler_groups: Total expected rows (via COUNT): 6
+0266.018 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.025 (0) Table ec_actionscheduler_groups: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=821) in 0.02 seconds
+0266.039 (0) Table ec_actionscheduler_groups: finishing file(s) (2, 0.5 KB)
+0266.051 (0) Table ec_actionscheduler_logs: Total expected rows (approximate): 2731
+0266.094 (0) Table ec_actionscheduler_logs: Rows added in this batch (next record: 2786): 2754 (uncompressed bytes in this segment=238293) in 0.05 seconds
+0266.108 (0) Table ec_actionscheduler_logs: finishing file(s) (2, 21.7 KB)
+0266.136 (0) Table ec_commentmeta: Total expected rows (via COUNT): 0
+0266.140 (0) Table ec_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=696) in 0.02 seconds
+0266.157 (0) Table ec_commentmeta: finishing file(s) (2, 0.4 KB)
+0266.174 (0) Table ec_comments: Total expected rows (via COUNT): 17
+0266.176 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.182 (0) Table ec_comments: Rows added in this batch (next record: 17): 17 (uncompressed bytes in this segment=5430) in 0.01 seconds
+0266.196 (0) Table ec_comments: finishing file(s) (2, 1.2 KB)
+0266.212 (0) Table ec_links: Total expected rows (via COUNT): 0
+0266.218 (0) Table ec_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1306) in 0.01 seconds
+0266.230 (0) Table ec_links: finishing file(s) (2, 0.5 KB)
+0266.250 (0) Table ec_postmeta: Total expected rows (via COUNT): 890
+0266.251 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.263 (0) Table ec_postmeta: Rows added in this batch (next record: 933): 890 (uncompressed bytes in this segment=57476) in 0.03 seconds
+0266.279 (0) Table ec_postmeta: finishing file(s) (2, 9.1 KB)
+0266.297 (0) Table ec_posts: Total expected rows (via COUNT): 95
+0266.300 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.308 (0) Table ec_posts: Rows added in this batch (next record: 103): 95 (uncompressed bytes in this segment=50538) in 0.02 seconds
+0266.324 (0) Table ec_posts: finishing file(s) (2, 8.8 KB)
+0266.338 (0) Table ec_term_relationships: Total expected rows (approximate): 81
+0266.357 (0) Table ec_term_relationships: Rows added in this batch (next record: 100000): 81 (uncompressed bytes in this segment=1792) in 0.03 seconds
+0266.370 (0) Table ec_term_relationships: finishing file(s) (2, 0.6 KB)
+0266.388 (0) Table ec_term_taxonomy: Total expected rows (via COUNT): 32
+0266.390 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.396 (0) Table ec_term_taxonomy: Rows added in this batch (next record: 32): 32 (uncompressed bytes in this segment=2057) in 0.02 seconds
+0266.411 (0) Table ec_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0266.429 (0) Table ec_termmeta: Total expected rows (via COUNT): 21
+0266.432 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.438 (0) Table ec_termmeta: Rows added in this batch (next record: 21): 21 (uncompressed bytes in this segment=1480) in 0.02 seconds
+0266.458 (0) Table ec_termmeta: finishing file(s) (2, 0.6 KB)
+0266.473 (0) Table ec_terms: Total expected rows (via COUNT): 32
+0266.476 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.482 (0) Table ec_terms: Rows added in this batch (next record: 32): 32 (uncompressed bytes in this segment=1760) in 0.02 seconds
+0266.496 (0) Table ec_terms: finishing file(s) (2, 0.8 KB)
+0266.513 (0) Table ec_wc_category_lookup: Total expected rows (approximate): 10
+0266.519 (0) Table ec_wc_category_lookup: Rows added in this batch (next record: 1000): 10 (uncompressed bytes in this segment=689) in 0.01 seconds
+0266.532 (0) Table ec_wc_category_lookup: finishing file(s) (2, 0.4 KB)
+0266.551 (0) Table ec_wc_product_meta_lookup: Total expected rows (via COUNT): 25
+0266.555 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.560 (0) Table ec_wc_product_meta_lookup: Rows added in this batch (next record: 40): 25 (uncompressed bytes in this segment=3951) in 0.02 seconds
+0266.573 (0) Table ec_wc_product_meta_lookup: finishing file(s) (2, 0.9 KB)
+0266.589 (0) Table ec_wc_reserved_stock: Total expected rows (approximate): 0
+0266.595 (0) Table ec_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=663) in 0.01 seconds
+0266.608 (0) Table ec_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0266.622 (0) Table ec_wc_tax_rate_classes: Total expected rows (via COUNT): 2
+0266.625 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.630 (0) Table ec_wc_tax_rate_classes: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=812) in 0.01 seconds
+0266.643 (0) Table ec_wc_tax_rate_classes: finishing file(s) (2, 0.4 KB)
+0266.664 (0) Table ec_woocommerce_order_itemmeta: Total expected rows (via COUNT): 27
+0266.667 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0266.672 (0) Table ec_woocommerce_order_itemmeta: Rows added in this batch (next record: 27): 27 (uncompressed bytes in this segment=1808) in 0.02 seconds
+0266.688 (0) Table ec_woocommerce_order_itemmeta: finishing file(s) (2, 0.6 KB)
+0266.708 (0) Table ec_woocommerce_payment_tokenmeta: Total expected rows (via COUNT): 0
+0266.713 (0) Table ec_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=811) in 0.01 seconds
+0266.728 (0) Table ec_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0266.745 (0) Table ec_aws_cache: Total expected rows (approximate): 5
+0266.753 (0) Table ec_aws_cache: Rows added in this batch (next record: 1000): 5 (uncompressed bytes in this segment=34357) in 0.01 seconds
+0266.769 (0) Table ec_aws_cache: finishing file(s) (2, 2.5 KB)
+0266.785 (0) Table ec_aws_index: Total expected rows (approximate): 987
+0266.803 (0) Table ec_aws_index: Rows added in this batch (next record: 1000): 987 (uncompressed bytes in this segment=65830) in 0.02 seconds
+0266.819 (0) Table ec_aws_index: finishing file(s) (2, 5.2 KB)
+0266.841 (0) Table ec_gla_budget_recommendations: Total expected rows (approximate): 4230
+0266.887 (0) Table ec_gla_budget_recommendations: Rows added in this batch (next record: 4230): 4230 (uncompressed bytes in this segment=131457) in 0.06 seconds
+0266.903 (0) Table ec_gla_budget_recommendations: finishing file(s) (2, 33 KB)
+0266.920 (0) Table ec_gla_merchant_issues: Total expected rows (via COUNT): 0
+0266.923 (0) Table ec_gla_merchant_issues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1161) in 0.01 seconds
+0266.936 (0) Table ec_gla_merchant_issues: finishing file(s) (2, 0.4 KB)
+0266.952 (0) Table ec_gla_shipping_rates: Total expected rows (via COUNT): 0
+0266.955 (0) Table ec_gla_shipping_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=740) in 0.01 seconds
+0266.969 (0) Table ec_gla_shipping_rates: finishing file(s) (2, 0.4 KB)
+0266.985 (0) Table ec_gla_shipping_times: Total expected rows (via COUNT): 0
+0266.989 (0) Table ec_gla_shipping_times: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=586) in 0.01 seconds
+0267.001 (0) Table ec_gla_shipping_times: finishing file(s) (2, 0.3 KB)
+0267.024 (0) Table ec_mailpoet_custom_fields: Total expected rows (via COUNT): 0
+0267.026 (0) Table ec_mailpoet_custom_fields: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=835) in 0.01 seconds
+0267.042 (0) Table ec_mailpoet_custom_fields: finishing file(s) (2, 0.4 KB)
+0267.058 (0) Table ec_mailpoet_dynamic_segment_filters: Total expected rows (via COUNT): 0
+0267.061 (0) Table ec_mailpoet_dynamic_segment_filters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=939) in 0.01 seconds
+0267.076 (0) Table ec_mailpoet_dynamic_segment_filters: finishing file(s) (2, 0.4 KB)
+0267.092 (0) Table ec_mailpoet_feature_flags: Total expected rows (via COUNT): 0
+0267.095 (0) Table ec_mailpoet_feature_flags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=748) in 0.01 seconds
+0267.109 (0) Table ec_mailpoet_feature_flags: finishing file(s) (2, 0.4 KB)
+0267.130 (0) Table ec_mailpoet_forms: Total expected rows (via COUNT): 0
+0267.133 (0) Table ec_mailpoet_forms: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=955) in 0.01 seconds
+0267.153 (0) Table ec_mailpoet_forms: finishing file(s) (2, 0.4 KB)
+0267.175 (0) Table ec_mailpoet_log: Total expected rows (via COUNT): 22
+0267.177 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0267.182 (0) Table ec_mailpoet_log: Rows added in this batch (next record: 22): 22 (uncompressed bytes in this segment=9029) in 0.02 seconds
+0267.198 (0) Table ec_mailpoet_log: finishing file(s) (2, 1.1 KB)
+0267.216 (0) Table ec_mailpoet_newsletter_links: Total expected rows (via COUNT): 0
+0267.222 (0) Table ec_mailpoet_newsletter_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=946) in 0.01 seconds
+0267.237 (0) Table ec_mailpoet_newsletter_links: finishing file(s) (2, 0.4 KB)
+0267.258 (0) Table ec_mailpoet_newsletter_option: Total expected rows (via COUNT): 0
+0267.259 (0) Table ec_mailpoet_newsletter_option: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=882) in 0.01 seconds
+0267.276 (0) Table ec_mailpoet_newsletter_option: finishing file(s) (2, 0.4 KB)
+0267.292 (0) Table ec_mailpoet_newsletter_option_fields: Total expected rows (via COUNT): 24
+0267.295 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0267.300 (0) Table ec_mailpoet_newsletter_option_fields: Rows added in this batch (next record: 24): 24 (uncompressed bytes in this segment=2526) in 0.01 seconds
+0267.314 (0) Table ec_mailpoet_newsletter_option_fields: finishing file(s) (2, 0.7 KB)
+0267.329 (0) Table ec_mailpoet_newsletter_posts: Total expected rows (via COUNT): 0
+0267.335 (0) Table ec_mailpoet_newsletter_posts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=763) in 0.01 seconds
+0267.348 (0) Table ec_mailpoet_newsletter_posts: finishing file(s) (2, 0.4 KB)
+0267.366 (0) Table ec_mailpoet_newsletter_segment: Total expected rows (via COUNT): 0
+0267.386 (0) Table ec_mailpoet_newsletter_segment: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=803) in 0.03 seconds
+0267.423 (0) Table ec_mailpoet_newsletter_segment: finishing file(s) (2, 0.4 KB)
+0267.448 (0) Table ec_mailpoet_newsletter_templates: Total expected rows (via COUNT): 76
+0267.450 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0267.498 (0) Table ec_mailpoet_newsletter_templates: Rows added in this batch (next record: 76): 76 (uncompressed bytes in this segment=1116684) in 0.06 seconds
+0267.516 (0) Table ec_mailpoet_newsletter_templates: finishing file(s) (2, 67 KB)
+0267.537 (0) Table ec_mailpoet_newsletters: Total expected rows (via COUNT): 0
+0267.542 (0) Table ec_mailpoet_newsletters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1771) in 0.01 seconds
+0267.559 (0) Table ec_mailpoet_newsletters: finishing file(s) (2, 0.6 KB)
+0267.579 (0) Table ec_mailpoet_scheduled_task_subscribers: Total expected rows (approximate): 0
+0267.583 (0) Table ec_mailpoet_scheduled_task_subscribers: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=929) in 0.01 seconds
+0267.598 (0) Table ec_mailpoet_scheduled_task_subscribers: finishing file(s) (2, 0.4 KB)
+0267.618 (0) Table ec_mailpoet_scheduled_tasks: Total expected rows (via COUNT): 49
+0267.620 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0267.627 (0) Table ec_mailpoet_scheduled_tasks: Rows added in this batch (next record: 49): 49 (uncompressed bytes in this segment=9347) in 0.02 seconds
+0267.643 (0) Table ec_mailpoet_scheduled_tasks: finishing file(s) (2, 1.6 KB)
+0267.660 (0) Table ec_mailpoet_segments: Total expected rows (via COUNT): 3
+0267.663 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0267.668 (0) Table ec_mailpoet_segments: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1707) in 0.01 seconds
+0267.682 (0) Table ec_mailpoet_segments: finishing file(s) (2, 0.7 KB)
+0267.704 (0) Table ec_mailpoet_sending_queues: Total expected rows (via COUNT): 0
+0267.710 (0) Table ec_mailpoet_sending_queues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1298) in 0.02 seconds
+0267.727 (0) Table ec_mailpoet_sending_queues: finishing file(s) (2, 0.5 KB)
+0267.746 (0) Table ec_mailpoet_settings: Total expected rows (via COUNT): 15
+0267.749 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0267.755 (0) Table ec_mailpoet_settings: Rows added in this batch (next record: 20): 15 (uncompressed bytes in this segment=3379) in 0.02 seconds
+0267.772 (0) Table ec_mailpoet_settings: finishing file(s) (2, 1.2 KB)
+0267.788 (0) Table ec_mailpoet_statistics_bounces: Total expected rows (via COUNT): 0
+0267.793 (0) Table ec_mailpoet_statistics_bounces: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=706) in 0.01 seconds
+0267.807 (0) Table ec_mailpoet_statistics_bounces: finishing file(s) (2, 0.4 KB)
+0267.829 (0) Table ec_mailpoet_statistics_clicks: Total expected rows (via COUNT): 0
+0267.832 (0) Table ec_mailpoet_statistics_clicks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1127) in 0.01 seconds
+0267.846 (0) Table ec_mailpoet_statistics_clicks: finishing file(s) (2, 0.5 KB)
+0267.862 (0) Table ec_mailpoet_statistics_forms: Total expected rows (via COUNT): 0
+0267.865 (0) Table ec_mailpoet_statistics_forms: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=708) in 0.01 seconds
+0267.880 (0) Table ec_mailpoet_statistics_forms: finishing file(s) (2, 0.4 KB)
+0267.897 (0) Table ec_mailpoet_statistics_newsletters: Total expected rows (via COUNT): 0
+0267.901 (0) Table ec_mailpoet_statistics_newsletters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=835) in 0.01 seconds
+0267.915 (0) Table ec_mailpoet_statistics_newsletters: finishing file(s) (2, 0.4 KB)
+0267.933 (0) Table ec_mailpoet_statistics_opens: Total expected rows (via COUNT): 0
+0267.936 (0) Table ec_mailpoet_statistics_opens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1071) in 0.01 seconds
+0267.949 (0) Table ec_mailpoet_statistics_opens: finishing file(s) (2, 0.4 KB)
+0267.966 (0) Table ec_mailpoet_statistics_unsubscribes: Total expected rows (via COUNT): 1
+0267.968 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0267.973 (0) Table ec_mailpoet_statistics_unsubscribes: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1170) in 0.01 seconds
+0267.987 (0) Table ec_mailpoet_statistics_unsubscribes: finishing file(s) (2, 0.5 KB)
+0268.003 (0) Table ec_mailpoet_statistics_woocommerce_purchases: Total expected rows (via COUNT): 0
+0268.010 (0) Table ec_mailpoet_statistics_woocommerce_purchases: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1276) in 0.01 seconds
+0268.023 (0) Table ec_mailpoet_statistics_woocommerce_purchases: finishing file(s) (2, 0.5 KB)
+0268.040 (0) Table ec_mailpoet_stats_notifications: Total expected rows (via COUNT): 0
+0268.043 (0) Table ec_mailpoet_stats_notifications: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=835) in 0.01 seconds
+0268.055 (0) Table ec_mailpoet_stats_notifications: finishing file(s) (2, 0.4 KB)
+0268.073 (0) Table ec_mailpoet_subscriber_custom_field: Total expected rows (via COUNT): 0
+0268.077 (0) Table ec_mailpoet_subscriber_custom_field: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=910) in 0.01 seconds
+0268.089 (0) Table ec_mailpoet_subscriber_custom_field: finishing file(s) (2, 0.4 KB)
+0268.104 (0) Table ec_mailpoet_subscriber_ips: Total expected rows (approximate): 0
+0268.108 (0) Table ec_mailpoet_subscriber_ips: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=595) in 0.01 seconds
+0268.120 (0) Table ec_mailpoet_subscriber_ips: finishing file(s) (2, 0.3 KB)
+0268.136 (0) Table ec_mailpoet_subscriber_segment: Total expected rows (via COUNT): 3
+0268.139 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.145 (0) Table ec_mailpoet_subscriber_segment: Rows added in this batch (next record: 6): 3 (uncompressed bytes in this segment=1210) in 0.02 seconds
+0268.159 (0) Table ec_mailpoet_subscriber_segment: finishing file(s) (2, 0.5 KB)
+0268.175 (0) Table ec_mailpoet_subscriber_tag: Total expected rows (via COUNT): 0
+0268.180 (0) Table ec_mailpoet_subscriber_tag: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=794) in 0.01 seconds
+0268.192 (0) Table ec_mailpoet_subscriber_tag: finishing file(s) (2, 0.4 KB)
+0268.212 (0) Table ec_mailpoet_subscribers: Total expected rows (via COUNT): 2
+0268.213 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.218 (0) Table ec_mailpoet_subscribers: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=2985) in 0.02 seconds
+0268.234 (0) Table ec_mailpoet_subscribers: finishing file(s) (2, 0.9 KB)
+0268.249 (0) Table ec_mailpoet_tags: Total expected rows (via COUNT): 0
+0268.255 (0) Table ec_mailpoet_tags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=732) in 0.01 seconds
+0268.267 (0) Table ec_mailpoet_tags: finishing file(s) (2, 0.4 KB)
+0268.283 (0) Table ec_mailpoet_user_agents: Total expected rows (via COUNT): 0
+0268.287 (0) Table ec_mailpoet_user_agents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=761) in 0.01 seconds
+0268.300 (0) Table ec_mailpoet_user_agents: finishing file(s) (2, 0.4 KB)
+0268.315 (0) Table ec_mailpoet_user_flags: Total expected rows (via COUNT): 0
+0268.318 (0) Table ec_mailpoet_user_flags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=813) in 0.01 seconds
+0268.332 (0) Table ec_mailpoet_user_flags: finishing file(s) (2, 0.4 KB)
+0268.350 (0) Table ec_wc_admin_note_actions: Total expected rows (via COUNT): 65
+0268.352 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.359 (0) Table ec_wc_admin_note_actions: Rows added in this batch (next record: 859): 65 (uncompressed bytes in this segment=11981) in 0.02 seconds
+0268.374 (0) Table ec_wc_admin_note_actions: finishing file(s) (2, 2.7 KB)
+0268.392 (0) Table ec_wc_admin_notes: Total expected rows (via COUNT): 56
+0268.393 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.399 (0) Table ec_wc_admin_notes: Rows added in this batch (next record: 59): 56 (uncompressed bytes in this segment=26171) in 0.02 seconds
+0268.414 (0) Table ec_wc_admin_notes: finishing file(s) (2, 6.7 KB)
+0268.455 (0) Table ec_wc_customer_lookup: Total expected rows (via COUNT): 1
+0268.458 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.464 (0) Table ec_wc_customer_lookup: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1473) in 0.01 seconds
+0268.480 (0) Table ec_wc_customer_lookup: finishing file(s) (2, 0.6 KB)
+0268.496 (0) Table ec_wc_download_log: Total expected rows (via COUNT): 0
+0268.502 (0) Table ec_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=747) in 0.01 seconds
+0268.518 (0) Table ec_wc_download_log: finishing file(s) (2, 0.4 KB)
+0268.535 (0) Table ec_wc_order_coupon_lookup: Total expected rows (approximate): 0
+0268.539 (0) Table ec_wc_order_coupon_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=715) in 0.01 seconds
+0268.553 (0) Table ec_wc_order_coupon_lookup: finishing file(s) (2, 0.4 KB)
+0268.570 (0) Table ec_wc_order_product_lookup: Total expected rows (via COUNT): 3
+0268.572 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.578 (0) Table ec_wc_order_product_lookup: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1499) in 0.01 seconds
+0268.591 (0) Table ec_wc_order_product_lookup: finishing file(s) (2, 0.6 KB)
+0268.608 (0) Table ec_wc_order_stats: Total expected rows (via COUNT): 3
+0268.611 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.615 (0) Table ec_wc_order_stats: Rows added in this batch (next record: 103): 3 (uncompressed bytes in this segment=1464) in 0.01 seconds
+0268.627 (0) Table ec_wc_order_stats: finishing file(s) (2, 0.6 KB)
+0268.643 (0) Table ec_wc_order_tax_lookup: Total expected rows (approximate): 0
+0268.649 (0) Table ec_wc_order_tax_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=793) in 0.01 seconds
+0268.662 (0) Table ec_wc_order_tax_lookup: finishing file(s) (2, 0.4 KB)
+0268.678 (0) Table ec_wc_product_attributes_lookup: Total expected rows (approximate): 24
+0268.682 (0) Table ec_wc_product_attributes_lookup: Rows added in this batch (next record: 1000): 24 (uncompressed bytes in this segment=1699) in 0.01 seconds
+0268.696 (0) Table ec_wc_product_attributes_lookup: finishing file(s) (2, 0.6 KB)
+0268.709 (0) Table ec_wc_product_download_directories: Total expected rows (via COUNT): 3
+0268.712 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.717 (0) Table ec_wc_product_download_directories: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1004) in 0.01 seconds
+0268.730 (0) Table ec_wc_product_download_directories: finishing file(s) (2, 0.5 KB)
+0268.745 (0) Table ec_wc_rate_limits: Total expected rows (via COUNT): 0
+0268.751 (0) Table ec_wc_rate_limits: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=698) in 0.01 seconds
+0268.764 (0) Table ec_wc_rate_limits: finishing file(s) (2, 0.4 KB)
+0268.781 (0) Table ec_wc_webhooks: Total expected rows (via COUNT): 0
+0268.785 (0) Table ec_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1226) in 0.01 seconds
+0268.798 (0) Table ec_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0268.817 (0) Table ec_woocommerce_api_keys: Total expected rows (via COUNT): 0
+0268.820 (0) Table ec_woocommerce_api_keys: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1059) in 0.01 seconds
+0268.835 (0) Table ec_woocommerce_api_keys: finishing file(s) (2, 0.5 KB)
+0268.854 (0) Table ec_woocommerce_attribute_taxonomies: Total expected rows (via COUNT): 2
+0268.857 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.862 (0) Table ec_woocommerce_attribute_taxonomies: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1133) in 0.02 seconds
+0268.875 (0) Table ec_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.5 KB)
+0268.893 (0) Table ec_woocommerce_downloadable_product_permissions: Total expected rows (via COUNT): 0
+0268.899 (0) Table ec_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1534) in 0.01 seconds
+0268.912 (0) Table ec_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0268.930 (0) Table ec_woocommerce_log: Total expected rows (via COUNT): 0
+0268.933 (0) Table ec_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=735) in 0.01 seconds
+0268.947 (0) Table ec_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0268.963 (0) Table ec_woocommerce_order_items: Total expected rows (via COUNT): 3
+0268.966 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0268.971 (0) Table ec_woocommerce_order_items: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=924) in 0.01 seconds
+0268.985 (0) Table ec_woocommerce_order_items: finishing file(s) (2, 0.5 KB)
+0269.000 (0) Table ec_woocommerce_payment_tokens: Total expected rows (via COUNT): 0
+0269.005 (0) Table ec_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=837) in 0.01 seconds
+0269.017 (0) Table ec_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0269.033 (0) Table ec_woocommerce_sessions: Total expected rows (via COUNT): 0
+0269.035 (0) Table ec_woocommerce_sessions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=736) in 0.01 seconds
+0269.050 (0) Table ec_woocommerce_sessions: finishing file(s) (2, 0.4 KB)
+0269.065 (0) Table ec_woocommerce_shipping_zone_locations: Total expected rows (via COUNT): 1
+0269.068 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0269.073 (0) Table ec_woocommerce_shipping_zone_locations: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=977) in 0.01 seconds
+0269.086 (0) Table ec_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.4 KB)
+0269.100 (0) Table ec_woocommerce_shipping_zone_methods: Total expected rows (via COUNT): 1
+0269.103 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0269.105 (0) Table ec_woocommerce_shipping_zone_methods: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=880) in 0.01 seconds
+0269.119 (0) Table ec_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.4 KB)
+0269.137 (0) Table ec_woocommerce_shipping_zones: Total expected rows (via COUNT): 1
+0269.140 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0269.143 (0) Table ec_woocommerce_shipping_zones: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=719) in 0.01 seconds
+0269.155 (0) Table ec_woocommerce_shipping_zones: finishing file(s) (2, 0.4 KB)
+0269.172 (0) Table ec_woocommerce_tax_rate_locations: Total expected rows (via COUNT): 0
+0269.177 (0) Table ec_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=848) in 0.01 seconds
+0269.192 (0) Table ec_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0269.207 (0) Table ec_woocommerce_tax_rates: Total expected rows (via COUNT): 0
+0269.210 (0) Table ec_woocommerce_tax_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1297) in 0.01 seconds
+0269.223 (0) Table ec_woocommerce_tax_rates: finishing file(s) (2, 0.5 KB)
+0269.226 (0) PHP event: code E_WARNING: filemtime(): stat failed for C:\xampp\htdocs\echo-shop/wp-content/updraft/backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db.gz (line 1922, C:\xampp\htdocs\echo-shop\wp-content\plugins\updraftplus\backup.php)
+0269.230 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_options.table.tmpr4151.gz (1/85/fopen): adding to final database dump
+0269.247 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_options.table.gz (2/85/fopen): adding to final database dump
+0269.250 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_users.table.tmpr2.gz (3/85/fopen): adding to final database dump
+0269.253 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_users.table.gz (4/85/fopen): adding to final database dump
+0269.254 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_usermeta.table.tmpr66.gz (5/85/fopen): adding to final database dump
+0269.257 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_usermeta.table.gz (6/85/fopen): adding to final database dump
+0269.260 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_actions.table.tmpr942.gz (7/85/fopen): adding to final database dump
+0269.264 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_actions.table.gz (8/85/fopen): adding to final database dump
+0269.266 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_claims.table.tmpr0.gz (9/85/fopen): adding to final database dump
+0269.269 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_claims.table.gz (10/85/fopen): adding to final database dump
+0269.271 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_groups.table.tmpr7.gz (11/85/fopen): adding to final database dump
+0269.273 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_groups.table.gz (12/85/fopen): adding to final database dump
+0269.275 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_logs.table.tmpr2787.gz (13/85/fopen): adding to final database dump
+0269.279 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_actionscheduler_logs.table.gz (14/85/fopen): adding to final database dump
+0269.281 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_commentmeta.table.tmpr0.gz (15/85/fopen): adding to final database dump
+0269.283 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_commentmeta.table.gz (16/85/fopen): adding to final database dump
+0269.285 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_comments.table.tmpr18.gz (17/85/fopen): adding to final database dump
+0269.288 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_comments.table.gz (18/85/fopen): adding to final database dump
+0269.290 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_links.table.tmpr0.gz (19/85/fopen): adding to final database dump
+0269.293 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_links.table.gz (20/85/fopen): adding to final database dump
+0269.296 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_postmeta.table.tmpr934.gz (21/85/fopen): adding to final database dump
+0269.299 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_postmeta.table.gz (22/85/fopen): adding to final database dump
+0269.301 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_posts.table.tmpr104.gz (23/85/fopen): adding to final database dump
+0269.304 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_posts.table.gz (24/85/fopen): adding to final database dump
+0269.305 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_term_relationships.table.tmpr100001.gz (25/85/fopen): adding to final database dump
+0269.308 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_term_relationships.table.gz (26/85/fopen): adding to final database dump
+0269.310 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_term_taxonomy.table.tmpr33.gz (27/85/fopen): adding to final database dump
+0269.313 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_term_taxonomy.table.gz (28/85/fopen): adding to final database dump
+0269.315 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_termmeta.table.tmpr22.gz (29/85/fopen): adding to final database dump
+0269.318 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_termmeta.table.gz (30/85/fopen): adding to final database dump
+0269.320 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_terms.table.tmpr33.gz (31/85/fopen): adding to final database dump
+0269.323 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_terms.table.gz (32/85/fopen): adding to final database dump
+0269.324 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_category_lookup.table.tmpr1001.gz (33/85/fopen): adding to final database dump
+0269.327 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_category_lookup.table.gz (34/85/fopen): adding to final database dump
+0269.330 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_product_meta_lookup.table.tmpr41.gz (35/85/fopen): adding to final database dump
+0269.332 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_product_meta_lookup.table.gz (36/85/fopen): adding to final database dump
+0269.335 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_reserved_stock.table.tmpr1.gz (37/85/fopen): adding to final database dump
+0269.337 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_reserved_stock.table.gz (38/85/fopen): adding to final database dump
+0269.339 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_tax_rate_classes.table.tmpr3.gz (39/85/fopen): adding to final database dump
+0269.341 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_tax_rate_classes.table.gz (40/85/fopen): adding to final database dump
+0269.344 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_order_itemmeta.table.tmpr28.gz (41/85/fopen): adding to final database dump
+0269.347 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_order_itemmeta.table.gz (42/85/fopen): adding to final database dump
+0269.349 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_payment_tokenmeta.table.tmpr0.gz (43/85/fopen): adding to final database dump
+0269.351 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_payment_tokenmeta.table.gz (44/85/fopen): adding to final database dump
+0269.353 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_aws_cache.table.tmpr1001.gz (45/85/fopen): adding to final database dump
+0269.356 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_aws_cache.table.gz (46/85/fopen): adding to final database dump
+0269.358 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_aws_index.table.tmpr1001.gz (47/85/fopen): adding to final database dump
+0269.361 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_aws_index.table.gz (48/85/fopen): adding to final database dump
+0269.363 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_budget_recommendations.table.tmpr4231.gz (49/85/fopen): adding to final database dump
+0269.368 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_budget_recommendations.table.gz (50/85/fopen): adding to final database dump
+0269.369 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_merchant_issues.table.tmpr0.gz (51/85/fopen): adding to final database dump
+0269.372 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_merchant_issues.table.gz (52/85/fopen): adding to final database dump
+0269.374 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_shipping_rates.table.tmpr0.gz (53/85/fopen): adding to final database dump
+0269.377 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_shipping_rates.table.gz (54/85/fopen): adding to final database dump
+0269.378 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_shipping_times.table.tmpr0.gz (55/85/fopen): adding to final database dump
+0269.381 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_gla_shipping_times.table.gz (56/85/fopen): adding to final database dump
+0269.384 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_custom_fields.table.tmpr0.gz (57/85/fopen): adding to final database dump
+0269.385 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_custom_fields.table.gz (58/85/fopen): adding to final database dump
+0269.388 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_dynamic_segment_filters.table.tmpr0.gz (59/85/fopen): adding to final database dump
+0269.390 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_dynamic_segment_filters.table.gz (60/85/fopen): adding to final database dump
+0269.393 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_feature_flags.table.tmpr0.gz (61/85/fopen): adding to final database dump
+0269.394 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_feature_flags.table.gz (62/85/fopen): adding to final database dump
+0269.397 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_forms.table.tmpr0.gz (63/85/fopen): adding to final database dump
+0269.399 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_forms.table.gz (64/85/fopen): adding to final database dump
+0269.402 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_log.table.tmpr23.gz (65/85/fopen): adding to final database dump
+0269.403 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_log.table.gz (66/85/fopen): adding to final database dump
+0269.406 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_links.table.tmpr0.gz (67/85/fopen): adding to final database dump
+0269.408 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_links.table.gz (68/85/fopen): adding to final database dump
+0269.411 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_option.table.tmpr0.gz (69/85/fopen): adding to final database dump
+0269.413 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_option.table.gz (70/85/fopen): adding to final database dump
+0269.416 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_option_fields.table.tmpr25.gz (71/85/fopen): adding to final database dump
+0269.418 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_option_fields.table.gz (72/85/fopen): adding to final database dump
+0269.420 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_posts.table.tmpr0.gz (73/85/fopen): adding to final database dump
+0269.422 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_posts.table.gz (74/85/fopen): adding to final database dump
+0269.425 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_segment.table.tmpr0.gz (75/85/fopen): adding to final database dump
+0269.427 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_segment.table.gz (76/85/fopen): adding to final database dump
+0269.429 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_templates.table.tmpr77.gz (77/85/fopen): adding to final database dump
+0269.433 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletter_templates.table.gz (78/85/fopen): adding to final database dump
+0269.436 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletters.table.tmpr0.gz (79/85/fopen): adding to final database dump
+0269.438 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_newsletters.table.gz (80/85/fopen): adding to final database dump
+0269.441 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_scheduled_task_subscribers.table.tmpr1.gz (81/85/fopen): adding to final database dump
+0269.461 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_scheduled_task_subscribers.table.gz (82/85/fopen): adding to final database dump
+0269.464 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_scheduled_tasks.table.tmpr50.gz (83/85/fopen): adding to final database dump
+0269.475 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_scheduled_tasks.table.gz (84/85/fopen): adding to final database dump
+0269.483 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_segments.table.tmpr4.gz (85/85/fopen): adding to final database dump
+0269.486 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_segments.table.gz (86/85/fopen): adding to final database dump
+0269.489 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_sending_queues.table.tmpr0.gz (87/85/fopen): adding to final database dump
+0269.492 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_sending_queues.table.gz (88/85/fopen): adding to final database dump
+0269.494 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_settings.table.tmpr21.gz (89/85/fopen): adding to final database dump
+0269.497 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_settings.table.gz (90/85/fopen): adding to final database dump
+0269.500 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_bounces.table.tmpr0.gz (91/85/fopen): adding to final database dump
+0269.502 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_bounces.table.gz (92/85/fopen): adding to final database dump
+0269.506 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_clicks.table.tmpr0.gz (93/85/fopen): adding to final database dump
+0269.509 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_clicks.table.gz (94/85/fopen): adding to final database dump
+0269.513 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_forms.table.tmpr0.gz (95/85/fopen): adding to final database dump
+0269.516 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_forms.table.gz (96/85/fopen): adding to final database dump
+0269.519 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_newsletters.table.tmpr0.gz (97/85/fopen): adding to final database dump
+0269.523 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_newsletters.table.gz (98/85/fopen): adding to final database dump
+0269.526 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_opens.table.tmpr0.gz (99/85/fopen): adding to final database dump
+0269.533 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_opens.table.gz (100/85/fopen): adding to final database dump
+0269.535 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_unsubscribes.table.tmpr2.gz (101/85/fopen): adding to final database dump
+0269.539 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_unsubscribes.table.gz (102/85/fopen): adding to final database dump
+0269.541 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_woocommerce_purchases.table.tmpr0.gz (103/85/fopen): adding to final database dump
+0269.543 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_statistics_woocommerce_purchases.table.gz (104/85/fopen): adding to final database dump
+0269.546 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_stats_notifications.table.tmpr0.gz (105/85/fopen): adding to final database dump
+0269.548 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_stats_notifications.table.gz (106/85/fopen): adding to final database dump
+0269.551 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_custom_field.table.tmpr0.gz (107/85/fopen): adding to final database dump
+0269.555 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_custom_field.table.gz (108/85/fopen): adding to final database dump
+0269.556 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_ips.table.tmpr1.gz (109/85/fopen): adding to final database dump
+0269.559 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_ips.table.gz (110/85/fopen): adding to final database dump
+0269.561 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_segment.table.tmpr7.gz (111/85/fopen): adding to final database dump
+0269.564 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_segment.table.gz (112/85/fopen): adding to final database dump
+0269.566 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_tag.table.tmpr0.gz (113/85/fopen): adding to final database dump
+0269.571 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscriber_tag.table.gz (114/85/fopen): adding to final database dump
+0269.572 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscribers.table.tmpr3.gz (115/85/fopen): adding to final database dump
+0269.575 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_subscribers.table.gz (116/85/fopen): adding to final database dump
+0269.577 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_tags.table.tmpr0.gz (117/85/fopen): adding to final database dump
+0269.580 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_tags.table.gz (118/85/fopen): adding to final database dump
+0269.583 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_user_agents.table.tmpr0.gz (119/85/fopen): adding to final database dump
+0269.586 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_user_agents.table.gz (120/85/fopen): adding to final database dump
+0269.589 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_user_flags.table.tmpr0.gz (121/85/fopen): adding to final database dump
+0269.591 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_mailpoet_user_flags.table.gz (122/85/fopen): adding to final database dump
+0269.594 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_admin_note_actions.table.tmpr860.gz (123/85/fopen): adding to final database dump
+0269.596 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_admin_note_actions.table.gz (124/85/fopen): adding to final database dump
+0269.599 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_admin_notes.table.tmpr60.gz (125/85/fopen): adding to final database dump
+0269.604 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_admin_notes.table.gz (126/85/fopen): adding to final database dump
+0269.605 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_customer_lookup.table.tmpr2.gz (127/85/fopen): adding to final database dump
+0269.608 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_customer_lookup.table.gz (128/85/fopen): adding to final database dump
+0269.610 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_download_log.table.tmpr0.gz (129/85/fopen): adding to final database dump
+0269.613 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_download_log.table.gz (130/85/fopen): adding to final database dump
+0269.615 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_coupon_lookup.table.tmpr1.gz (131/85/fopen): adding to final database dump
+0269.618 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_coupon_lookup.table.gz (132/85/fopen): adding to final database dump
+0269.620 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_product_lookup.table.tmpr4.gz (133/85/fopen): adding to final database dump
+0269.623 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_product_lookup.table.gz (134/85/fopen): adding to final database dump
+0269.625 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_stats.table.tmpr104.gz (135/85/fopen): adding to final database dump
+0269.627 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_stats.table.gz (136/85/fopen): adding to final database dump
+0269.630 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_tax_lookup.table.tmpr1.gz (137/85/fopen): adding to final database dump
+0269.632 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_order_tax_lookup.table.gz (138/85/fopen): adding to final database dump
+0269.635 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_product_attributes_lookup.table.tmpr1001.gz (139/85/fopen): adding to final database dump
+0269.637 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_product_attributes_lookup.table.gz (140/85/fopen): adding to final database dump
+0269.639 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_product_download_directories.table.tmpr4.gz (141/85/fopen): adding to final database dump
+0269.641 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_product_download_directories.table.gz (142/85/fopen): adding to final database dump
+0269.644 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_rate_limits.table.tmpr0.gz (143/85/fopen): adding to final database dump
+0269.646 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_rate_limits.table.gz (144/85/fopen): adding to final database dump
+0269.648 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_webhooks.table.tmpr0.gz (145/85/fopen): adding to final database dump
+0269.651 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_wc_webhooks.table.gz (146/85/fopen): adding to final database dump
+0269.654 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_api_keys.table.tmpr0.gz (147/85/fopen): adding to final database dump
+0269.656 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_api_keys.table.gz (148/85/fopen): adding to final database dump
+0269.658 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_attribute_taxonomies.table.tmpr3.gz (149/85/fopen): adding to final database dump
+0269.660 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_attribute_taxonomies.table.gz (150/85/fopen): adding to final database dump
+0269.663 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_downloadable_product_permissions.table.tmpr0.gz (151/85/fopen): adding to final database dump
+0269.666 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_downloadable_product_permissions.table.gz (152/85/fopen): adding to final database dump
+0269.668 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_log.table.tmpr0.gz (153/85/fopen): adding to final database dump
+0269.671 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_log.table.gz (154/85/fopen): adding to final database dump
+0269.673 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_order_items.table.tmpr4.gz (155/85/fopen): adding to final database dump
+0269.675 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_order_items.table.gz (156/85/fopen): adding to final database dump
+0269.678 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_payment_tokens.table.tmpr0.gz (157/85/fopen): adding to final database dump
+0269.680 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_payment_tokens.table.gz (158/85/fopen): adding to final database dump
+0269.683 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_sessions.table.tmpr0.gz (159/85/fopen): adding to final database dump
+0269.686 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_sessions.table.gz (160/85/fopen): adding to final database dump
+0269.688 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_shipping_zone_locations.table.tmpr2.gz (161/85/fopen): adding to final database dump
+0269.690 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_shipping_zone_locations.table.gz (162/85/fopen): adding to final database dump
+0269.694 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_shipping_zone_methods.table.tmpr2.gz (163/85/fopen): adding to final database dump
+0269.697 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_shipping_zone_methods.table.gz (164/85/fopen): adding to final database dump
+0269.698 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_shipping_zones.table.tmpr2.gz (165/85/fopen): adding to final database dump
+0269.701 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_shipping_zones.table.gz (166/85/fopen): adding to final database dump
+0269.704 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_tax_rate_locations.table.tmpr0.gz (167/85/fopen): adding to final database dump
+0269.706 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_tax_rate_locations.table.gz (168/85/fopen): adding to final database dump
+0269.708 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_tax_rates.table.tmpr0.gz (169/85/fopen): adding to final database dump
+0269.710 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db-table-ec_woocommerce_tax_rates.table.gz (170/85/fopen): adding to final database dump
+0269.757 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db.gz: finished writing out complete database file (625.3 KB)
+0269.821 (0) Total database tables backed up: 85 (backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db.gz, size: 640438, sha1: 51ba68dbdacc63772c84d6ccbfc5a468598cefd6, sha256: 2f5dbc9bb7ba7e1b19b3dd777f2ddcf03fbc402493d2e918d296a2a40b8f4241)
+0269.830 (0) PHP event: code E_DEPRECATED: strlen(): Passing null to parameter #1 ($string) of type string is deprecated (line 2862, C:\xampp\htdocs\echo-shop\wp-content\plugins\updraftplus\backup.php)
+0269.835 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-plugins.zip: plugins: This file has already been successfully uploaded
+0269.837 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-themes.zip: themes: This file has already been successfully uploaded
+0269.839 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-uploads.zip: uploads: This file has already been successfully uploaded
+0269.841 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-others.zip: others: This file has already been successfully uploaded
+0269.843 (0) backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db.gz: db: This file has not yet been successfully uploaded: will queue
+0269.845 (0) Saving backup history. Total backup size: 54.7 MB
+0269.851 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0269.857 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0269.859 (0) No remote despatch: user chose no remote backup service
+0269.862 (0) Recording as successfully uploaded: backup_2022-10-19-2102_Echo_Shop_3fe6b17f39ce-db.gz
+0269.868 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=4, retain_db=4
+0269.871 (0) Number of backup sets in history: 2; groups (db): 1
+0269.873 (0) Examining (for databases) backup set with group_id=0, nonce=3fe6b17f39ce, datestamp=1666213333 (Oct 19 2022 21:02:13)
+0269.876 (0) This backup set is the backup set just made, so will not be deleted.
+0269.876 (0) Examining (for databases) backup set with group_id=0, nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0269.876 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0269.877 (0) Number of backup sets in history: 2; groups (files): 1
+0269.879 (0) Examining (for files) backup set with nonce=3fe6b17f39ce, datestamp=1666213333 (Oct 19 2022 21:02:13)
+0269.879 (0) This backup set is the backup set just made, so will not be deleted.
+0269.881 (0) This backup set is the backup set just made, so will not be deleted.
+0269.881 (0) This backup set is the backup set just made, so will not be deleted.
+0269.881 (0) This backup set is the backup set just made, so will not be deleted.
+0269.881 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0269.884 (0) Examining (for files) backup set with nonce=d0b57f927088, datestamp=1666118739 (Oct 18 2022 18:45:39)
+0269.884 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0269.884 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0269.889 (0) Resume backup (3fe6b17f39ce, 0): finish run
+0269.894 (0) Decremented the semaphore (fd) by 1
+0269.899 (0) Semaphore (fd) unlocked
+0269.902 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0269.913 (0) No email will/can be sent - the user has not configured an email address.
+0269.914 (0) The backup apparently succeeded and is now complete

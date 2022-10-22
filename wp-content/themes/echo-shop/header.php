@@ -137,8 +137,13 @@
 
 				<div class="col-xl-3 col-lg-3 col-md-6 col-12">
 					<div class="card_shop">
-						<a href="<?php echo wc_get_cart_url(); ?>"> <i class="bi bi-bag"></i> </a>
-						<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'echo-shop'); ?>"><?php echo sprintf(_n('%d item', '%d items', WC()->cart->get_cart_contents_count()), WC()->cart->get_cart_contents_count()); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
+
+						<a class="content_icon" href="<?php echo wc_get_cart_url(); ?>"> <span>
+								<i class="bi bi-bag"></i>
+							</span>
+						</a>
+
+						<span class="cart-customlocation"> <?php echo WC()->cart->get_cart_contents_count(); ?> </span>
 					</div>
 				</div><!-- finish col -->
 			</div><!-- finish row -->
