@@ -148,7 +148,7 @@
 					}
 					?> </div><!-- finish col -->
 
-				<div class="col-xl-2 col-lg-2 col-md-12 col-12">
+				<div class="col-xl-4 col-lg-4 col-md-12 col-12">
 
 				</div><!-- finish col -->
 
@@ -169,7 +169,7 @@
 							<span class="cart-customlocation"> <?php echo WC()->cart->get_cart_contents_count(); ?> </span>
 						</li>
 
-						<li>
+						<li class="account_list">
 							<i class="bi bi-person-circle"></i>
 							<ul class="acount_menu">
 								<?php
