@@ -61,15 +61,7 @@
 	</section>
 	<!-- finish offer slider -->
 	<script>
-		//  swiper in stikey header 
-		var swiper = new Swiper(".mySwiper", {
-			spaceBetween: 50,
-			centeredSlides: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-		});
+
 	</script>
 
 
@@ -117,6 +109,33 @@
 	</section>
 
 	<!-- finish stikeky header -->
+
+	<!-- search overlay start -->
+	<section class="search__area d-flex align-items-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-xxl-12">
+					<div class="search__wrapper">
+						<div class="search__close">
+							<button class="search-close-btn"><i class="bi bi-x-circle"></i></button>
+						</div>
+						<form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+							<div class="search__input">
+								<input name="s" class="form-control" value="<?php echo esc_attr(get_search_query()); ?>" type="text" placeholder="<?php echo esc_attr_x('Search Here...', 'placeholder',  'echo-shop') ?>">
+								<button type="submit" id="searchsubmit" type="submit"><i class="bi bi-search"></i></button>
+								<?php if (class_exists('Woocommerce')) : ?>
+									<input type="hidden" value="product" name="post_type" id="post_type" />
+								<?php endif; ?>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- search overlay end -->
+
+
 	<!-- strat first header -->
 
 	<section class="first_header py-3">
@@ -129,22 +148,57 @@
 					}
 					?> </div><!-- finish col -->
 
-				<div class="col-xl-6 col-lg-6 col-md-12 col-12">
-					<div class="search_form">
-						<?php aws_get_search_form(true); ?>
-					</div>
+				<div class="col-xl-2 col-lg-2 col-md-12 col-12">
+
 				</div><!-- finish col -->
 
-				<div class="col-xl-3 col-lg-3 col-md-6 col-12">
-					<div class="card_shop">
+				<div class="col-xl-5 col-lg-5 col-md-6 col-12">
+					<ul class="settings_header">
 
-						<a class="content_icon" href="<?php echo wc_get_cart_url(); ?>"> <span>
-								<i class="bi bi-bag"></i>
-							</span>
-						</a>
+						<li class="search_form">
+							<a href="javascript:void(0)" class="search-toggle">
+								<i class="bi bi-search"></i>
+							</a>
+						</li>
 
-						<span class="cart-customlocation"> <?php echo WC()->cart->get_cart_contents_count(); ?> </span>
-					</div>
+						<li class="card_shop">
+							<a class="content_icon" href="<?php echo wc_get_cart_url(); ?>"> <span>
+									<i class="bi bi-bag"></i>
+								</span>
+							</a>
+							<span class="cart-customlocation"> <?php echo WC()->cart->get_cart_contents_count(); ?> </span>
+						</li>
+
+						<li>
+							<i class="bi bi-person-circle"></i>
+							<ul class="acount_menu">
+								<?php
+								if (is_user_logged_in()) :
+								?>
+									<li>
+										<a href='<?php echo esc_url(get_permalink(get_option('woocommerce_myaccount_page_id'))); ?>'>My Acountant</a>
+
+									</li>
+
+									<li>
+										<a href='<?php echo esc_url(wp_login_url(get_permalink(get_option('woocommerce_myaccount_page_id')))); ?>'> Logout</a>
+									</li>
+								<?php
+								else :
+								?>
+									<li>
+										<a href='<?php echo esc_url(wp_login_url(get_permalink(get_option('woocommerce_myaccount_page_id')))); ?>'> login/Register</a>
+									</li>
+								<?php
+								endif;
+								?>
+							</ul>
+						</li>
+
+
+					</ul>
+
+
 				</div><!-- finish col -->
 			</div><!-- finish row -->
 		</div><!-- finish container -->

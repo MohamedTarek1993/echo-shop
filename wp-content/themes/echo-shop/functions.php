@@ -188,7 +188,7 @@ function echo_shop_scripts()
 	wp_enqueue_script('jquery-script', $base . 'assets/js/jquery-3.5.1.min.js', [], null, true);
 	wp_enqueue_script('boostrap-script', $base . 'assets/js/bootstrap.min.js', [], null, true);
 	wp_enqueue_script('slider-script', $base . 'assets/js/swiper-demos.js', [], null, true);
-	// wp_enqueue_script('main-script', $base . 'assets/js/main.js', [], null, true);
+	 wp_enqueue_script('main-script', $base . 'assets/js/main.js', [], null, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
