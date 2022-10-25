@@ -2609,7 +2609,11 @@ input {
 
 //finish order recieve  page
 //start login form
-
+.login_head{ //this class add on form-login.php for register and login form header
+font-size: 2rem;
+color: var(--color-text);
+font-family: 'bold';
+}
 .woocommerce-form {
   width: 76%;
   display: flex;
@@ -2619,6 +2623,11 @@ input {
   border-radius: 8px;
   border: 1px solid #f5f5f5;
   padding: 2rem;
+  p{
+    font-size: 1.1rem;
+    color: var(--color-pargraph);
+    font-family: 'regular';
+  }
   .woocommerce-form-row {
     width: 100%;
     margin-bottom: 3%;
@@ -2679,7 +2688,14 @@ input {
        }
   }
 }
-
+.login_register{//this class add on form-login.php for register and login form
+width: 97%;
+.form-row{
+  .woocommerce-button{
+    width: 50%;
+  }
+} 
+}
 //finish login form
 
 //start lost password

@@ -11,22 +11,13 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'echo-shop' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'echo-shop' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'echo-shop' ), 'echo-shop', '<a href="http://mohammed-tarek.top/">Mohammed Tarek</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer  class="site-footer">
+	
+	</footer><!-- finish footer -->
+
+	<div class="copy_rights_footer">
+		<p> </p>
+	</div>
 
 <?php wp_footer(); ?>
 
