@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the MailPoet package.
 msgid ""
 msgstr ""
-"Project-Id-Version: MailPoet 3.101.0\n"
+"Project-Id-Version: MailPoet 3.101.1\n"
 "Report-Msgid-Bugs-To: http://support.mailpoet.com/\n"
-"POT-Creation-Date: 2022-10-17 13:13:43+00:00\n"
+"POT-Creation-Date: 2022-10-24 17:28:01+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -620,7 +620,7 @@ msgstr ""
 
 #: lib/AutomaticEmails/WooCommerce/Events/AbandonedCart.php:57
 msgctxt "Description of Abandoned Shopping Cart email"
-msgid "Email sent when a customer abandons his cart."
+msgid "Send the email when a customer abandons their cart."
 msgstr ""
 
 #: lib/AutomaticEmails/WooCommerce/Events/AbandonedCart.php:59
@@ -3735,17 +3735,17 @@ msgid "Not active"
 msgstr ""
 
 #: lib/Newsletter/NewsletterValidator.php:47 views/newsletter/editor.html:386
-#: views/newsletters.html:425
+#: views/newsletters.html:426
 msgid "All emails must include an \"Unsubscribe\" link. Add a footer widget to your email to continue."
 msgstr ""
 
 #: lib/Newsletter/NewsletterValidator.php:52 views/newsletter/editor.html:388
-#: views/newsletters.html:427
+#: views/newsletters.html:428
 msgid "Poet, please add prose to your masterpiece before you send it to your followers."
 msgstr ""
 
 #: lib/Newsletter/NewsletterValidator.php:71 views/newsletter/editor.html:387
-#: views/newsletters.html:426
+#: views/newsletters.html:427
 msgid "A re-engagement email must include a link with [link:subscription_re_engage_url] shortcode."
 msgstr ""
 
@@ -3754,7 +3754,7 @@ msgid "Re-engagement emails are disabled because open and click tracking is disa
 msgstr ""
 
 #: lib/Newsletter/NewsletterValidator.php:88 views/newsletter/editor.html:390
-#: views/newsletters.html:428
+#: views/newsletters.html:429
 msgctxt "(Please reuse the current translation used for the string “Automatic Latest Content”) This Error message is displayed when a user tries to send a “Post Notification” email without any “Automatic Latest Content” widget inside"
 msgid "Please add an “Automatic Latest Content” widget to the email from the right sidebar."
 msgstr ""
@@ -6532,7 +6532,7 @@ msgstr ""
 msgid "The email could not be saved. Please, clear browser cache and reload the page. If the problem persists, duplicate the email and try again."
 msgstr ""
 
-#: views/newsletter/editor.html:389 views/newsletters.html:429
+#: views/newsletter/editor.html:389 views/newsletters.html:430
 msgid "This email has already been sent. It can be edited, but not sent again. Duplicate this email if you want to send it again."
 msgstr ""
 
@@ -8544,51 +8544,55 @@ msgstr ""
 msgid "For example, “Spring email”. [link]Read the guide.[/link]"
 msgstr ""
 
-#: views/newsletters.html:414
+#: views/newsletters.html:413
+msgid "Google Analytics tracking is not available in the free version of the MailPoet plugin."
+msgstr ""
+
+#: views/newsletters.html:415
 msgid "Automatic Email"
 msgstr ""
 
-#: views/newsletters.html:415 views/subscribers/subscribers.html:121
+#: views/newsletters.html:416 views/subscribers/subscribers.html:121
 msgid "Tip:"
 msgstr ""
 
-#: views/newsletters.html:416
+#: views/newsletters.html:417
 msgid "Select %1s events conditions"
 msgstr ""
 
-#: views/newsletters.html:417
+#: views/newsletters.html:418
 msgid "Send this %1s Automatic Email when..."
 msgstr ""
 
-#: views/newsletters.html:418
+#: views/newsletters.html:419
 msgid "Your %1s Automatic Email is now activated!"
 msgstr ""
 
-#: views/newsletters.html:419
+#: views/newsletters.html:420
 msgid "Your %1s Automatic Email could not be activated, please check the settings."
 msgstr ""
 
-#: views/newsletters.html:420
+#: views/newsletters.html:421
 msgid "You need to configure email options before this email can be sent."
 msgstr ""
 
-#: views/newsletters.html:421
+#: views/newsletters.html:422
 msgid "Sent to %1$d customers"
 msgstr ""
 
-#: views/newsletters.html:422
+#: views/newsletters.html:423
 msgid "WooCommerce emails won’t be sent to new customers because the opt-in on checkout is disabled. Enable it so they can immediately get your emails after their first purchase."
 msgstr ""
 
-#: views/newsletters.html:423
+#: views/newsletters.html:424
 msgid "Edit WooCommerce settings"
 msgstr ""
 
-#: views/newsletters.html:424
+#: views/newsletters.html:425
 msgid "Re-engagement emails are disabled because [link]open and click tracking[/link] is disabled."
 msgstr ""
 
-#: views/newsletters.html:430
+#: views/newsletters.html:431
 msgid "An email can only be scheduled up to 5 years in the future. Please choose a shorter period."
 msgstr ""
 
@@ -11139,114 +11143,74 @@ msgctxt "This text resides in the Upgrade page: /wp-admin/admin.php?page=mailpoe
 msgid "And if you’re not sure which plan is the right one for you, our [link]Customer Support team[/link] are on hand to help you decide."
 msgstr ""
 
-#: views/welcome_wizard.html:27
+#: views/welcome_wizard.html:28
 msgid "Welcome! Let’s get you started on the right foot."
 msgstr ""
 
-#: views/welcome_wizard.html:28
+#: views/welcome_wizard.html:29
 msgid "Who is the sender of the emails you’ll be creating with MailPoet?"
 msgstr ""
 
-#: views/welcome_wizard.html:29
-msgid "Help MailPoet improve with anonymous usage tracking."
-msgstr ""
-
 #: views/welcome_wizard.html:30
-msgid "Data we don’t gather:"
+msgid "Privacy and data sharing"
 msgstr ""
 
 #: views/welcome_wizard.html:31
-msgid "Do you want to share anonymous data and help us improve the plugin? We appreciate your help!"
+msgid "Help improve MailPoet"
 msgstr ""
 
 #: views/welcome_wizard.html:32
-msgid "This requires loading 3rd-party libraries enabled."
+msgid "Get improved features and fixes faster by sharing with us [link]non-sensitive data about how you use MailPoet[/link]. No personal data is tracked or stored."
 msgstr ""
 
-#: views/welcome_wizard.html:33
+#: views/welcome_wizard.html:33 views/welcome_wizard.html:35
 msgid "Note"
 msgstr ""
 
 #: views/welcome_wizard.html:34
-msgid "This needs to be enabled if you want to be able to contact support."
-msgstr ""
-
-#: views/welcome_wizard.html:35
-msgid "Important"
+msgid "If enabled, we may load the Google Fonts library and [link]other 3rd-party libraries we use[/link]."
 msgstr ""
 
 #: views/welcome_wizard.html:36
-msgid "Do you want to enable loading 3rd-party libraries, like Google Fonts (used in Form Editor) and HelpScout (used for support)?"
+msgid "Enable better-looking Google fonts in emails and show contextual help articles in MailPoet?"
 msgstr ""
 
 #: views/welcome_wizard.html:37
-msgid "Read more about libraries we use."
-msgstr ""
-
-#: views/welcome_wizard.html:38
-msgid "Gathering usage data allows us to make MailPoet better — the way you use MailPoet will be considered as we evaluate new features, judge the quality of an update, or determine if an improvement makes sense."
-msgstr ""
-
-#: views/welcome_wizard.html:39
-msgid "Any personal data"
-msgstr ""
-
-#: views/welcome_wizard.html:40
-msgid "Email addresses"
-msgstr ""
-
-#: views/welcome_wizard.html:41
-msgid "Login and passwords"
-msgstr ""
-
-#: views/welcome_wizard.html:42
-msgid "Content of your emails"
-msgstr ""
-
-#: views/welcome_wizard.html:43
-msgid "Open and click rates"
-msgstr ""
-
-#: views/welcome_wizard.html:44
-msgid "Read more about what we collect."
-msgstr ""
-
-#: views/welcome_wizard.html:45
 msgctxt "A label on a button"
 msgid "See video guide"
 msgstr ""
 
-#: views/welcome_wizard.html:46
+#: views/welcome_wizard.html:38
 msgctxt "A label on a skip button"
 msgid "Skip"
 msgstr ""
 
-#: views/welcome_wizard.html:47
+#: views/welcome_wizard.html:39
 msgctxt "A label on a skip button"
 msgid "Finish later"
 msgstr ""
 
-#: views/welcome_wizard.html:48
+#: views/welcome_wizard.html:40
 msgctxt "A form field label"
 msgid "From Address"
 msgstr ""
 
-#: views/welcome_wizard.html:49
+#: views/welcome_wizard.html:41
 msgctxt "A form field label"
 msgid "Reply-to Address"
 msgstr ""
 
-#: views/welcome_wizard.html:50
+#: views/welcome_wizard.html:42
 msgctxt "A form field label"
 msgid "From Name"
 msgstr ""
 
-#: views/welcome_wizard.html:51
+#: views/welcome_wizard.html:43
 msgctxt "A label on a button"
 msgid "Next"
 msgstr ""
 
-#: views/welcome_wizard.html:52
+#: views/welcome_wizard.html:44
 msgctxt "A label on a button"
 msgid "Continue"
 msgstr ""
@@ -11271,7 +11235,7 @@ msgid "MailPoet will import all your WooCommerce customers. Do you want to impor
 msgstr ""
 
 #: views/woocommerce_setup_translations.html:7
-msgid "Do you want to enable cookie tracking on your website? MailPoet will use cookies to provide you with more precise statistics. [link]Learn more[/link]."
+msgid "Collect more precise email and site engagement, and e-commerce metrics by enabling cookie tracking. [link]Learn more[/link]."
 msgstr ""
 
 #: views/woocommerce_setup_translations.html:11
