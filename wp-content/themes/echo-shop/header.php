@@ -160,7 +160,7 @@
 								<i class="bi bi-search"></i>
 							</a>
 						</li>
-
+                         <?php if(class_exists('Woocommerce')): //check when deactive woocommerce plugin ?>
 						<li class="card_shop">
 							<a class="content_icon" href="<?php echo wc_get_cart_url(); ?>"> <span>
 									<i class="bi bi-bag"></i>
@@ -194,7 +194,7 @@
 								?>
 							</ul>
 						</li>
-
+                        <?php endif ; //end if check when deactive woocommerce plugin ?>  
 
 					</ul>
 

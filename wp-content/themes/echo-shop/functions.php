@@ -99,6 +99,11 @@ function echo_shop_setup()
 		)
 	);
 
+// Set up the WordPress image custom size.
+add_image_size( 'hero_slider', 1920, 800, array('center' , 'center') );
+add_image_size( 'blog-img', 458, 260, array('center' , 'center') );
+
+
 	// Add theme support for selective refresh for widgets.
 	add_theme_support('customize-selective-refresh-widgets');
 
