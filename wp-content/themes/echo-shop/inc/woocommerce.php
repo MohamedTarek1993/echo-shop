@@ -403,4 +403,27 @@ add_filter('woocommerce_admin_disabled', '__return_true');
  * @return void
  */
 
+
+// Hide Uncategorized product category from shop page
+add_filter('woocommerce_product_subcategories_args', 'hide_uncategorized_cat_from_shop_page');
+function hide_uncategorized_cat_from_shop_page($args)
+{
+	$args['exclude'] = get_option('default_product_cat');
+	return $args;
+}
+
+// Hide Uncategorized product category from widget
+add_filter('woocommerce_product_categories_widget_args', 'hide_uncategorized_cat_from_widget');
+
+function hide_uncategorized_cat_from_widget($args)
+{
+	$args['exclude'] = get_option('default_product_cat');
+	return $args;
+}
+
+
+//hide category product count in product archives
+add_filter('woocommerce_subcategory_count_html', '__return_false');
+
+
 // You can use all Woocommerce shortcodes here below. See available shortcodes here https://docs.woocommerce.com/document/woocommerce-shortcodes/

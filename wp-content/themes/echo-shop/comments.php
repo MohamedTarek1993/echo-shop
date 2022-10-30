@@ -18,60 +18,59 @@
 if ( post_password_required() ) {
 	return;
 }
+
+if (have_comments()) {
 ?>
 
-<div id="comments" class="comments-area">
+	<div class="custombox" id="comments">
+		<h4 class="small-title">
+			<?php printf(
+				_n('%s Comment', '%s Comments', get_comments_number(), 'echo-shop'),
+				number_format_i18n(get_comments_number())
+			); ?>
+		</h4>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="comments-list">
+					<?php
+					$max_depth = get_option('thread_comments_depth');
+					if (get_option('thread_comments') != '1') {
+						$max_depth = 1;
+					}
+					wp_list_comments([
+						'avatar_size' => 80,
+						'style' => 'div',
+						'callback' => 'wpc_comment_callback',
+						'max_depth' => $max_depth,
+					]);
+					?>
+				</div>
+				<div class="d-flex justify-content-between">
+					<div><?php previous_comments_link(__('Previous Comments', 'echo-shop')); ?></div>
+					<div><?php next_comments_link(__('Next Comments', 'echo-shop')); ?></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php
+}
 
-	<?php
-	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
-		?>
-		<h2 class="comments-title">
-			<?php
-			$echo_shop_comment_count = get_comments_number();
-			if ( '1' === $echo_shop_comment_count ) {
-				printf(
-					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'echo-shop' ),
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
-				);
-			} else {
-				printf( 
-					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $echo_shop_comment_count, 'comments title', 'echo-shop' ) ),
-					number_format_i18n( $echo_shop_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
-				);
-			}
-			?>
-		</h2><!-- .comments-title -->
 
-		<?php the_comments_navigation(); ?>
+comment_form([
+	'class_container' => 'custombox',
+	'title_reply_before' => '<h4 class="small-title">',
+	'title_reply_after' => '</h4>',
+	'comment_notes_before' => '',
+	'comment_notes_after' => '',
+	'class_submit' => 'btn',
+	'fields' => [
+		'author' => '<input name="author" type="text" class="form-control" placeholder="' . esc_attr(__('Your name', 'echo-shop')) . '">',
+		'email' => '<input name="email" type="text" class="form-control" placeholder="' . esc_attr(__('Email address', 'echo-shop')) . '">',
+		'cookies' => '',
+	],
+	'comment_field' => '<textarea name="comment" class="form-control" placeholder="' . esc_attr(__('Your comment', 'echo-shop')) . '"></textarea>',
+	'class_form' => 'form-wrapper',
+]);
+?>
 
-		<ol class="comment-list">
-			<?php
-			wp_list_comments(
-				array(
-					'style'      => 'ol',
-					'short_ping' => true,
-				)
-			);
-			?>
-		</ol><!-- .comment-list -->
 
-		<?php
-		the_comments_navigation();
-
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() ) :
-			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'echo-shop' ); ?></p>
-			<?php
-		endif;
-
-	endif; // Check for have_comments().
-
-	comment_form();
-	?>
-
-</div><!-- #comments -->

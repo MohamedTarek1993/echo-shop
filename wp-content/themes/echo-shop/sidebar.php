@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The sidebar containing the main widget area
  *
@@ -6,12 +7,11 @@
  *
  * @package Echo-shop
  */
-
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
 ?>
 
-<div id="secondary" class="widget_area_wocommerce">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div><!-- #secondary -->
+<div class="sideber_warrper">
+	<?php
+	dynamic_sidebar('sidebar-1'); ?>
+
+
+</div>

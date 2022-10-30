@@ -17,7 +17,7 @@
 
 	<div class="copy_rights_footer">
 		<p>
-		<?php echo get_theme_mod("footer_copy_rights", esc_html__("All Right Received To Echo Company ")) ?>
+		<?php echo esc_html( get_theme_mod("footer_copy_rights", __("All Right Received To Echo Company 2022 " , 'echo-shop')) ); ?> 
 
 		</p>
 	</div>

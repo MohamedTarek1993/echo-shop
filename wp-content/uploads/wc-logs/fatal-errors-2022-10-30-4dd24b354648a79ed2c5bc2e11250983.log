@@ -1,0 +1,187 @@
+2022-10-30T13:41:44+00:00 CRITICAL Uncaught Error: Class "Ci_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Ci_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Ci_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:43:43+00:00 CRITICAL Uncaught Error: Class "Ci_Instagram" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Ci_Instagram')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(21): register_widget('Ci_Instagram')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:45:44+00:00 CRITICAL Uncaught Error: Class "Echo_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Echo_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Echo_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:47:44+00:00 CRITICAL Uncaught Error: Class "Echo_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Echo_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Echo_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:49:44+00:00 CRITICAL Uncaught Error: Class "Echo_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Echo_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Echo_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:51:43+00:00 CRITICAL Uncaught Error: Class "Echo_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Echo_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Echo_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:53:43+00:00 CRITICAL Uncaught Error: Class "Echo_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Echo_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Echo_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:55:37+00:00 CRITICAL Uncaught Error: Class "Echo_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Echo_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Echo_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\echo-shop\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T13:55:37+00:00 CRITICAL Uncaught Error: Class "Echo_Categories" not found in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(115): WP_Widget_Factory->register('Echo_Categories')
+#1 C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\widgets.php(22): register_widget('Echo_Categories')
+#2 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): {closure}('')
+#3 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\echo-shop\wp-includes\widgets.php(1854): do_action('widgets_init')
+#6 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#7 C:\xampp\htdocs\echo-shop\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\echo-shop\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\echo-shop\wp-settings.php(598): do_action('init')
+#10 C:\xampp\htdocs\echo-shop\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\echo-shop\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\echo-shop\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-includes\class-wp-widget-factory.php on line 61
+
+2022-10-30T14:07:36+00:00 CRITICAL syntax error, unexpected token "endwhile", expecting end of file in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\single.php on line 160
+
+2022-10-30T14:08:40+00:00 CRITICAL Unmatched '}' in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\comments.php on line 57
+
+2022-10-30T14:09:33+00:00 CRITICAL Unmatched '}' in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\comments.php on line 57
+
+2022-10-30T14:09:39+00:00 CRITICAL Unmatched '}' in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\comments.php on line 57
+
+2022-10-30T20:41:16+00:00 CRITICAL syntax error, unexpected single-quoted string " ) . ", expecting ")" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\class-wp-bootstrap-navwalker.php on line 368
+
+2022-10-30T20:43:19+00:00 CRITICAL syntax error, unexpected single-quoted string " ) . ", expecting ")" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\class-wp-bootstrap-navwalker.php on line 368
+
+2022-10-30T20:45:20+00:00 CRITICAL syntax error, unexpected single-quoted string " ) . ", expecting ")" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\class-wp-bootstrap-navwalker.php on line 368
+
+2022-10-30T20:47:20+00:00 CRITICAL syntax error, unexpected single-quoted string " ) . ", expecting ")" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\class-wp-bootstrap-navwalker.php on line 368
+
+2022-10-30T20:49:20+00:00 CRITICAL syntax error, unexpected single-quoted string " ) . ", expecting ")" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\class-wp-bootstrap-navwalker.php on line 368
+
+2022-10-30T20:52:18+00:00 CRITICAL syntax error, unexpected single-quoted string " ) . ", expecting ")" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\class-wp-bootstrap-navwalker.php on line 368
+
+2022-10-30T20:52:20+00:00 CRITICAL syntax error, unexpected single-quoted string " ) . ", expecting ")" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\class-wp-bootstrap-navwalker.php on line 368
+
+2022-10-30T23:32:18+00:00 CRITICAL syntax error, unexpected token "-", expecting ":" in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\inc\widgets\recent-posts.php on line 155
+

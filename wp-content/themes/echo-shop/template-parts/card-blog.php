@@ -65,7 +65,7 @@
                             </p>
                         </div>
                         <div class="button">
-                            <a href="<?php echo $post_link ?>"><?php echo __('read more...', 'echo-shop'); ?> </a>
+                            <a href="<?php echo $post_link ?>"><?php echo esc_html_e('read more...', 'echo-shop'); ?> </a>
                         </div>
                     </div>
 
