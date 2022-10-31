@@ -16,7 +16,10 @@
 	</footer><!-- finish footer -->
 
 	<div class="copy_rights_footer">
-		<p> </p>
+		<p>
+		<?php echo esc_html( get_theme_mod("footer_copy_rights", __("All Right Received To Echo Company 2022 " , 'echo-shop')) ); ?> 
+
+		</p>
 	</div>
 
 <?php wp_footer(); ?>

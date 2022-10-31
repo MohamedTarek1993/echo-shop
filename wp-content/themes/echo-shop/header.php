@@ -166,7 +166,7 @@
 									<i class="bi bi-bag"></i>
 								</span>
 							</a>
-							<span class="cart-customlocation"> <?php echo WC()->cart->get_cart_contents_count(); ?> </span>
+							<span class="cart-customlocation"> <?php echo esc_html( WC()->cart->get_cart_contents_count() );  ?> </span>
 						</li>
 
 						<li class="account_list">

@@ -22,8 +22,8 @@ echo esc_html( wp_strip_all_tags( $email_heading ) );
 echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
 /* translators: %s: Customer first name */
-echo sprintf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ) . "\n\n";
-echo esc_html__( 'Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:', 'woocommerce' ) . "\n\n";
+echo sprintf( esc_html__( 'Hi %s,', 'echo-shop' ), esc_html( $order->get_billing_first_name() ) ) . "\n\n";
+echo esc_html__( 'Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:', 'echo-shop' ) . "\n\n";
 
 /*
  * @hooked WC_Emails::order_details() Shows the order details table.

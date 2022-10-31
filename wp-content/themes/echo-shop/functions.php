@@ -28,7 +28,9 @@ function echo_shop_setup()
 		* If you're building a theme based on Echo-shop, use a find and replace
 		* to change 'echo-shop' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain('echo-shop', get_template_directory() . '/languages');
+	$textdomain = 'echo-shop';
+	load_theme_textdomain($textdomain, get_stylesheet_directory() . '/languages'); //child theme
+	load_theme_textdomain($textdomain, get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support('automatic-feed-links');
@@ -99,6 +101,13 @@ function echo_shop_setup()
 		)
 	);
 
+	// Set up the WordPress image custom size.
+	add_image_size('hero_slider', 1920, 800, array('center', 'center'));
+	add_image_size('blog-img', 458, 260, array('center', 'center'));
+	add_image_size('archieve-img', 1920, 500, array('center', 'center'));
+
+
+
 	// Add theme support for selective refresh for widgets.
 	add_theme_support('customize-selective-refresh-widgets');
 
@@ -123,8 +132,6 @@ function echo_shop_setup()
 	 */
 
 	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
-
-	
 }
 add_action('after_setup_theme', 'echo_shop_setup');
 
@@ -162,6 +169,11 @@ function echo_shop_widgets_init()
 }
 add_action('widgets_init', 'echo_shop_widgets_init');
 
+
+
+
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -188,7 +200,7 @@ function echo_shop_scripts()
 	wp_enqueue_script('jquery-script', $base . 'assets/js/jquery-3.5.1.min.js', [], null, true);
 	wp_enqueue_script('boostrap-script', $base . 'assets/js/bootstrap.min.js', [], null, true);
 	wp_enqueue_script('slider-script', $base . 'assets/js/swiper-demos.js', [], null, true);
-	 wp_enqueue_script('main-script', $base . 'assets/js/main.js', [], null, true);
+	wp_enqueue_script('main-script', $base . 'assets/js/main.js', [], null, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
@@ -224,29 +236,65 @@ if (defined('JETPACK__VERSION')) {
 }
 
 /**
+ * Widgets Folder.
+ */
+require get_template_directory() . '/inc/widgets/widgets.php';
+
+
+/**
  * Load WooCommerce compatibility file.
  */
 if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
-// Hide Uncategorized product category from shop page
-add_filter('woocommerce_product_subcategories_args', 'hide_uncategorized_cat_from_shop_page');
-function hide_uncategorized_cat_from_shop_page($args)
-{
-	$args['exclude'] = get_option('default_product_cat');
-	return $args;
+
+/**
+ * callback function comment.
+ */
+if (!function_exists('wpc_comment_callback')) {
+	function wpc_comment_callback($comment, $args, $depth)
+	{
+		$tag = $args['style'] == 'div' ? 'div' : 'li';
+?>
+		<<?php echo $tag; ?> <?php comment_class('media'); ?> id="comment-<?php echo $comment->comment_ID; ?>">
+			<?php if (get_option('show_avatars') == '1') { ?>
+				<a href="#">
+					<?php echo get_avatar($comment, $args['avatar_size'], false, false, ['class' => 'rounded-circle']) ?>
+				</a>
+			<?php } ?>
+			<div class="media-body" id="comment-body-<?php echo $comment->comment_ID; ?>">
+				<h4>
+					<?php echo get_comment_author_link($comment); ?>
+					<small><?php printf(
+								/* translators: %s is a time difference */
+								__('%s ago', 'echo-shop'),
+								human_time_diff(get_comment_time('U'), current_time('U'))
+							); ?></small>
+				</h4>
+				<p><?php comment_text(); ?></p>
+				<?php
+				comment_reply_link([
+					'depth' => $depth,
+					'max_depth' => $args['max_depth'],
+					'reply_text' => __('Reply', 'echo-shop'),
+					'add_below' => 'comment-body',
+				]);
+				?>
+			</div>
+	<?php
+	}
 }
 
-// Hide Uncategorized product category from widget
-add_filter('woocommerce_product_categories_widget_args', 'hide_uncategorized_cat_from_widget');
 
-function hide_uncategorized_cat_from_widget($args)
-{
-	$args['exclude'] = get_option('default_product_cat');
-	return $args;
+add_filter('comment_reply_link', function ($link) {
+	return str_replace("class='", "class='btn", $link);
+});
+if (!function_exists('wpc_comments_pagination_attributes')) {
+	add_filter('next_comments_link_attributes', 'wpc_comments_pagination_attributes');
+	add_filter('previous_comments_link_attributes', 'wpc_comments_pagination_attributes');
+	function wpc_comments_pagination_attributes()
+	{
+		return 'class="btn"';
+	}
 }
-
-
-//hide category product count in product archives
-add_filter('woocommerce_subcategory_count_html', '__return_false');

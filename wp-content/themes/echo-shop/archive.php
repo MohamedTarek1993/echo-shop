@@ -10,42 +10,61 @@
 get_header();
 ?>
 
-	<div id="primary" class="site-main">
+	<!---------------------- start header-------------------------------------------->
+	<section class="header_section" style="background-image: url('<?php bloginfo("stylesheet_directory"); ?>/assets/image/archieve-header.png');">
+			<div class="container">
+				<div class="row">
+					<div class="page__title-wrapper">
+						<h3 class="title">
+						<?php echo get_the_archive_title();	 ?>
+						</h3>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="<?php echo home_url(); ?>"> <?php echo esc_html_e('Home', 'echo-shop'); ?> </a></li>
+								<li class="breadcrumb-item active" aria-current="page"><?php echo get_the_archive_title();	 ?> </li>
+							</ol>
+						</nav>
+					</div>
 
-		<?php if ( have_posts() ) : ?>
+				</div>
+			</div>
+		</section>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+		<!---------------------- finish header -------------------------------------------->
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+		<!---------------------- start blog content-------------------------------------------->
+		<section class="blog_content blog_archieve">
+			<div class="container">
+				<div class="row">
 
-			endwhile;
 
-			the_posts_navigation();
+					<!-- start card blog -->
+					<?php get_template_part('template-parts/card-blog-2');  ?>
+					<!-- start card blog -->
 
-		else :
+					<!-- start sidebar -->
+						<!-- start sidebar -->
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-12">
 
-			get_template_part( 'template-parts/content', 'none' );
+                          <div class="sideber_warrper">
+                                 <?php
+                    dynamic_sidebar('sidebar-5'); ?>
 
-		endif;
-		?>
 
-	</div><!-- #main -->
+                              </div>
+                      </div>
+					
+					<!-- finish sidebar -->
+				
+					<!-- finish sidebar -->
 
+				</div> <!-- finish row -->
+				<!---------------------- start pajnition-------------------------------------------->
+				<?php get_template_part('template-parts/pagination');  ?>
+				<!---------------------- finish pajnition-------------------------------------------->
+			</div> <!-- finish container -->
+		</section>
+		<!---------------------- finish blog content-------------------------------------------->
 <?php
-get_sidebar();
 get_footer();

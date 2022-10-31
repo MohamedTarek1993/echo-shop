@@ -1,0 +1,26 @@
+2022-10-29T17:07:56+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\front-page.php on line 165
+
+2022-10-29T19:45:00+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::have_posts() in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\front-page.php:197
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\echo-shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\echo-shop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\front-page.php on line 197
+
+2022-10-29T19:46:02+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::have_posts() in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\front-page.php:197
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\echo-shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\echo-shop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\front-page.php on line 197
+
+2022-10-29T19:46:16+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::have_posts() in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\front-page.php:197
+Stack trace:
+#0 C:\xampp\htdocs\echo-shop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\echo-shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\echo-shop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\echo-shop\wp-content\themes\echo-shop\front-page.php on line 197
+
